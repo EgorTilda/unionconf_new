@@ -1,0 +1,225 @@
+// Reset and Base Styles
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+// Font
+@font-face {
+    font-family: 'Neue Machina';
+    src: url('./../public/font/NeueMachina/NeueMachina-Ultrabold.eot');
+    src: url('./../public/font/NeueMachina/NeueMachina-Ultrabold.eot?#iefix') format('embedded-opentype'),
+        url('./../public/font/NeueMachina/NeueMachina-Ultrabold.woff2') format('woff2'),
+        url('./../public/font/NeueMachina/NeueMachina-Ultrabold.woff') format('woff'),
+        url('./../public/font/NeueMachina/NeueMachina-Ultrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nebulas Extra';
+    src: url('./../public/font/Nebulas/Nebulas-ExtraBold.eot');
+    src: url('./../public/font/Nebulas/Nebulas-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('./../public/font/Nebulas/Nebulas-ExtraBold.woff2') format('woff2'),
+        url('./../public/font/Nebulas/Nebulas-ExtraBold.woff') format('woff'),
+        url('./../public/font/Nebulas/Nebulas-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./../public/font/SFProDisplay/SFProDisplay-Heavy.eot');
+    src: url('./../public/font/SFProDisplay/SFProDisplay-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('./../public/font/SFProDisplay/SFProDisplay-Heavy.woff2') format('woff2'),
+        url('./../public/font/SFProDisplay/SFProDisplay-Heavy.woff') format('woff'),
+        url('./../public/font/SFProDisplay/SFProDisplay-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./../public/font/SFProDisplay/SFProDisplay-Regular.eot');
+    src: url('./../public/font/SFProDisplay/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./../public/font/SFProDisplay/SFProDisplay-Regular.woff2') format('woff2'),
+        url('./../public/font/SFProDisplay/SFProDisplay-Regular.woff') format('woff'),
+        url('./../public/font/SFProDisplay/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./../public/font/SFProDisplay/SFProDisplay-RegularItalic.eot');
+    src: url('./../public/font/SFProDisplay/SFProDisplay-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('./../public/font/SFProDisplay/SFProDisplay-RegularItalic.woff2') format('woff2'),
+        url('./../public/font/SFProDisplay/SFProDisplay-RegularItalic.woff') format('woff'),
+        url('./../public/font/SFProDisplay/SFProDisplay-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./../public/font/SFProDisplay/SFProDisplay-Bold.eot');
+    src: url('./../public/font/SFProDisplay/SFProDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./../public/font/SFProDisplay/SFProDisplay-Bold.woff2') format('woff2'),
+        url('./../public/font/SFProDisplay/SFProDisplay-Bold.woff') format('woff'),
+        url('./../public/font/SFProDisplay/SFProDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('./../public/font/SFProDisplay/SFProDisplay-Medium.eot');
+    src: url('./../public/font/SFProDisplay/SFProDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./../public/font/SFProDisplay/SFProDisplay-Medium.woff2') format('woff2'),
+        url('./../public/font/SFProDisplay/SFProDisplay-Medium.woff') format('woff'),
+        url('./../public/font/SFProDisplay/SFProDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Vars
+$primary: #2C3C63;
+$secondary: #8A96EA;
+$primary-grad: linear-gradient(90deg, #6675ED 4.51%, #616FBF 51.14%, rgba(106, 121, 238, 0.65) 105.82%);
+$back-grad: linear-gradient(90deg, #4F519F 0%, #4D4F9D 21.35%, #4D4F9D 80.1%, #4F519F 100%);
+$accent: #D8F25F;
+$white: #F9F9F9;
+$black: #191919;
+$gray: #E9E9EB;
+
+// Base
+html, body {
+    font-family: 'SF Pro Display', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 100%;
+    @media screen and (max-width: 1280px) {
+        font-size: 90%;
+    }
+    @media screen and (max-width: 1200px) {
+        font-size: 65%;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 55%;
+    }
+
+}
+
+.container {
+    max-width: 1530px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    @media screen and (min-width: 1920px) {
+        max-width: 1800px;
+    }
+    @media screen and (max-width: 1280px) {
+        max-width: 1240px;
+    }
+    @media screen and (max-width: 576px) {
+        max-width: 100%;
+    }
+}
+
+.page {
+    // background: #b4bef5;
+    overflow-x: hidden; 
+}
