@@ -167,7 +167,7 @@
     // border: 2px solid #000;
     display: flex;
     &:not(:last-child) {
-        margin-right: 1%;
+        margin-right: 12px;
     }
     &:nth-child(odd) {
         align-items: end;
@@ -177,7 +177,7 @@
     }
     @media screen and (max-width: 992px) {
         flex: 1 0 45%;
-        margin-right: 4%;
+        margin-right: 12px;
     }
     @media screen and (max-width: 992px){
         margin-right: 12px;
@@ -197,7 +197,7 @@
     @media screen and (max-width: 1024px) {
         min-height: 32rem;
     }
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 440px) {
         min-height: 20rem;
     }
 
@@ -225,7 +225,7 @@
             transform: translate(-50%, -50%);
             z-index: 2;
             // box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.1) inset;
-            @media screen and (max-width: 425px) {
+            @media screen and (max-width: 440px) {
                 height: 25px;
                 background-size: 30px;
             }
@@ -239,7 +239,7 @@
             position: absolute;
             top: 100%;
             // box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.1);
-            @media screen and (max-width: 425px) {
+            @media screen and (max-width: 440px) {
                 content: url("./../public/icon/arrow-right-mobile.svg");
             }
         }
@@ -252,7 +252,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 440px) {
             font-size: 2rem;
         }
     }

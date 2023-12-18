@@ -649,8 +649,13 @@
 .footer__uc {
     background-color: $accent;
     padding: 4.2rem 0;
+    transition: box-shadow .1s ease-in-out;
+    cursor: pointer;
     @media screen and (max-width: 768px) {
         background-color: transparent;
+    }
+    &:hover {
+        box-shadow: 0px 8px 30px 0px rgba(219, 239, 124, 7), 0px -8px 30px 0px rgba(219, 239, 124, .7);
     }
 }
 
@@ -678,10 +683,11 @@
 }
 
 .footer__contacts {
-    background: linear-gradient(180deg, rgba(239, 238, 254, 0.91) 9.91%, #B4BEF5 100%);
-    // background-color: #b4bef5;
     padding-top: 5rem;
     padding-bottom: 2rem;
+    @media screen and (min-width: 769px) {
+        background: linear-gradient(180deg, rgba(239, 238, 254, 0.91) 9.91%, #B4BEF5 100%);
+    }
 }
 
 .copyright {
@@ -723,7 +729,7 @@
         transform: rotate(45deg);
     }
 
-    @media screen and (max-width: 590px) {
+    @media screen and (max-width: 768px) {
         display: block;
     }
 }
