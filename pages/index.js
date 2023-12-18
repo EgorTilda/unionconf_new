@@ -573,19 +573,19 @@ export default function Home() {
                         </a>
                         <div className="footer__uc-wrap">
                             <div className="footer__uc-item">
-                                <a href="#" className="footer__uc-link">UNIONCONF</a>
+                                <a href="#main" className="footer__uc-link">UNIONCONF</a>
                                 <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
                             </div>
                             <div className="footer__uc-item">
-                                <a href="#" className="footer__uc-link">UNIONCONF</a>
+                                <a href="#main" className="footer__uc-link">UNIONCONF</a>
                                 <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
                             </div>
                             <div className="footer__uc-item">
-                                <a href="#" className="footer__uc-link">UNIONCONF</a>
+                                <a href="#main" className="footer__uc-link">UNIONCONF</a>
                                 <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
                             </div>
                             <div className="footer__uc-item">
-                                <a href="#" className="footer__uc-link">UNIONCONF</a>
+                                <a href="#main" className="footer__uc-link">UNIONCONF</a>
                                 <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
                             </div>
                         </div>
