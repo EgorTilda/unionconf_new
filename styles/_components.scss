@@ -61,6 +61,8 @@
 
 //btn-cta
 .btn-cta {
+    position: relative;
+    overflow: hidden;
     max-width: 26rem;
     width: 100%;
     display: flex;
@@ -76,10 +78,34 @@
     font-weight: 700;
     line-height: 112%;
 
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 2.5em;
+        height: 100%;
+        background-color: rgba($accent, .8);
+        transform: translateX(-4em);
+        animation: move-light 1.5s infinite;
+    }
+
+    &:hover {
+        background: linear-gradient(90deg, #f1f1f1 12.93%, #d2ff00 40.96%, #f2f2f2 120.62%);
+    }
     @media screen and (max-width: 425px) {
         font-weight: 700;
         font-size: 16px;
-        padding: 0.4rem 3.6rem;
+        padding: 0.4em 3.6em;
+    }
+}
+
+@keyframes move-light {
+    from {
+        transform: translateX(-2em) skewX(-45deg);
+    } 
+    to  {
+        transform: translateX(30em) skewX(-45deg);
     }
 }
 
@@ -95,7 +121,7 @@
     &__inner {
         width: auto;
         display: flex;
-        animation: tickerAnim 20s linear infinite alternate;
+        animation: tickerAnim 20s linear infinite;
         will-change: transform;
     }
     &__item {
@@ -113,10 +139,13 @@
 }
 @keyframes tickerAnim {
     0% {
-        transform: translate(0%, 0);
+        transform: translate(-20%, 0);
+    }
+    50% {
+        transform: translate(-100%, 0);
     }
     100% {
-        transform: translate(-100%, 0);
+        transform: translate(0%, 0);
     }
 }
 
