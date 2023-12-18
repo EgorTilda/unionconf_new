@@ -90,18 +90,6 @@ legend {
 
 // Font
 @font-face {
-    font-family: 'Neue Machina';
-    src: url('./../public/font/NeueMachina/NeueMachina-Ultrabold.eot');
-    src: url('./../public/font/NeueMachina/NeueMachina-Ultrabold.eot?#iefix') format('embedded-opentype'),
-        url('./../public/font/NeueMachina/NeueMachina-Ultrabold.woff2') format('woff2'),
-        url('./../public/font/NeueMachina/NeueMachina-Ultrabold.woff') format('woff'),
-        url('./../public/font/NeueMachina/NeueMachina-Ultrabold.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
     font-family: 'Nebulas Extra';
     src: url('./../public/font/Nebulas/Nebulas-ExtraBold.eot');
     src: url('./../public/font/Nebulas/Nebulas-ExtraBold.eot?#iefix') format('embedded-opentype'),
