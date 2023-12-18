@@ -35,9 +35,6 @@
         &--active {
             color: $secondary;
         }
-        &--line {
-            border-right: 1px dashed $black;
-        }
         &:hover {
             color: $secondary;
         }
@@ -47,7 +44,7 @@
 .header {
     padding: 1.2rem 0;
     width: 100%;
-    background: linear-gradient(180deg, #5456a3 0%, #4c4d99 100%);
+    // background: linear-gradient(180deg, #5456a3 0%, #4c4d99 100%);
     min-height: 6rem;
 }
 
@@ -91,7 +88,7 @@
     width: 100%;
     overflow: hidden;
     color: #a2c1fe;
-    font-family: "Nebulas";
+    font-family: "Nebulas", sans-serif;
     font-size: 3.75rem;
     font-weight: 800;
     text-transform: uppercase;
@@ -106,6 +103,12 @@
         margin-right: 4.4rem;
         flex-grow: 4;
         flex-shrink: 0;
+        @media screen and (max-width: 576px) {
+            margin-right: 20px;
+        }
+    }
+    @media screen and (max-width: 576px) {
+        font-size: 20px;
     }
 }
 @keyframes tickerAnim {
@@ -172,9 +175,12 @@
     &:nth-child(even) {
         align-items: start;
     }
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 992px) {
         flex: 1 0 45%;
         margin-right: 4%;
+    }
+    @media screen and (max-width: 992px){
+        margin-right: 12px;
     }
 }
 .about-card {
@@ -192,10 +198,7 @@
         min-height: 32rem;
     }
     @media screen and (max-width: 425px) {
-        min-height: 26rem;
-    }
-    @media screen and (max-width: 425px) {
-        min-height: 22rem;
+        min-height: 20rem;
     }
 
     &__inner {
@@ -205,7 +208,7 @@
         justify-content: center;
         align-items: center;
         border-radius: 1.75rem;
-        box-shadow: 5px -4px 7px 0px rgba(0, 0, 0, 0.1);
+        // box-shadow: 5px -4px 7px 0px rgba(0, 0, 0, 0.1);
         position: relative;
 
         &:after,
@@ -221,7 +224,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 2;
-            box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.1) inset;
+            // box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.1) inset;
             @media screen and (max-width: 425px) {
                 height: 25px;
                 background-size: 30px;
@@ -235,8 +238,7 @@
             background-color: $accent;
             position: absolute;
             top: 100%;
-            // z-index: -1;
-            box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.1);
+            // box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.1);
             @media screen and (max-width: 425px) {
                 content: url("./../public/icon/arrow-right-mobile.svg");
             }
@@ -262,7 +264,7 @@
         background-color: $gray;
     }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 992px) {
     .about-card__item--3 {
         order: 4;
     }
@@ -273,8 +275,9 @@
 
 // Stat Elem
 .stat-elem {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    max-width: 100%;
     &__value {
         font-size: 4rem;
         font-weight: 700;
@@ -282,6 +285,9 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        @media screen and (max-width: 576px){
+            font-size: 48px;
+        }
     }
     &__data {
         max-width: 17rem;
@@ -291,6 +297,10 @@
         font-size: 1.25rem;
         padding: 0 1rem;
         transform: translateY(20%);
+        @media screen and (max-width: 576px){
+            font-size: 16px;
+            max-width: 100%;
+        }
     }
 }
 .stat-elem--left {
@@ -299,7 +309,7 @@
 .stat-elem--right {
     text-align: right;
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 576px) {
         align-self: flex-end;
     }
 }
@@ -309,6 +319,11 @@
     display: inline-block;
     color: #b4bbed;
     font-size: 8rem;
+    font-weight: 400;
+    @media screen and (max-width: 576px) {
+        font-size: 100px;
+        transform: translateY(16%);
+    }
 }
 .stat-elem--right.stat-elem:after {
     content: "}";
@@ -316,6 +331,11 @@
     display: inline-block;
     color: #b4bbed;
     font-size: 8rem;
+    font-weight: 400;
+    @media screen and (max-width: 576px) {
+        font-size: 100px;
+        transform: translateY(16%);
+    }
 }
 
 // Benefits Card
@@ -393,7 +413,7 @@
     border: 1px solid #fff;
     display: flex;
     &__text {
-        display: inline-block;
+        display: inline-flex;
         color: #111;
         text-align: center;
         font-size: 1.25rem;
@@ -402,6 +422,8 @@
         padding: 1.3rem 2.8rem;
         border-radius: 2.75rem;
         background-color: #b2bbf3;
+        justify-content: center;
+        align-items: center;
     }
     &__icon {
         min-width: 20px;
@@ -489,7 +511,13 @@
     font-size: 2rem;
     font-weight: 700;
     max-width: 38rem;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 992px) {
+        font-size: 20px;
+    }
+    @media screen and (max-width: 860px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: 760px) {
         font-size: 16px;
         font-weight: 400;
         max-width: 100%;
@@ -527,6 +555,9 @@
     &:nth-child(even) {
         align-items: end;
     }
+    @media screen and (max-width: 768px) {
+        max-width: 240px;
+    }
 }
 .scale-card {
     width: 100%;
@@ -563,6 +594,9 @@
             transform: translate(-50%, -50%);
             z-index: 2;
             box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.1) inset;
+            @media screen and (max-width: 992px) {
+                height: 40px;
+            }
         }
     }
     &__content {
@@ -572,6 +606,9 @@
         justify-content: space-between;
         padding: 5rem 3rem;
         min-height: 80%;
+        @media screen and (max-width: 862px) {
+            padding: 30px 16px;
+        }
     }
     &__icon {
         max-width: 80%;
@@ -582,6 +619,10 @@
         color: $white;
         font-size: 1.25rem;
         font-weight: 400;
+
+        @media screen and (max-width: 620px) {
+            font-size: 16px;
+        }
     }
 }
 
@@ -630,6 +671,7 @@
     }
     .header {
         padding: 40px 0;
+        padding-bottom: 20px;
     }
     .logo {
         max-width: 142px;

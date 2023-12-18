@@ -5,7 +5,7 @@ const Header = () => {
         <header className="header">
             <div class="container">
                     <div class="header__row">
-                        <a href="#" class="logo">
+                        <a href="#main" class="logo">
                             <img src="./img/logo.svg" alt="UNIONCONF Логотип" />
                         </a>
                         <Navbar /> 

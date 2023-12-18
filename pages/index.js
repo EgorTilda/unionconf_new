@@ -22,7 +22,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="page">
-          <div className="page-top">
+          <div className="page-top"  id="main-section">
             <Header />
             <section className="intro">
                 <div className="container intro__container">
@@ -39,7 +39,7 @@ export default function Home() {
             </section>
           </div>
           <main className="main">
-            <section className="about">
+            <section className="about" id="about">
                 <h2 className="ticker-title">
                     <div className="ticker-title__inner">
                         <span className="ticker-title__item">Web3</span>
@@ -176,9 +176,9 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="benefits">
+            <section className="benefits" id="benefits">
                 <div className="benefits__path">
-                    <svg width="1921" height="213" viewBox="0 0 1921 213" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="1921" height="213" viewBox="0 0 1921 213" fill="#F9F9F9" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M1920.39 0.805664H0.390625V212.279H647.035C702.85 212.279 757.574 196.835 805.152 167.657L816.273 160.836C909.531 103.646 1027.45 105.565 1118.8 165.76C1164.85 196.105 1218.78 212.279 1273.93 212.279H1920.39V0.805664Z" fill="#F9F9F9"/>
                     </svg>
                 </div>
@@ -258,7 +258,7 @@ export default function Home() {
                 </nav>
             </section>
 
-            <section className="spaces">
+            <section className="spaces" id="spaces">
                 <div className="spaces__path">
                 <svg width="1920" height="252" viewBox="0 0 1920 252" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M1472.68 65.7154C1437.2 65.7154 1408.35 94.5775 1408.35 130.05C1408.35 164.196 1465 242.337 1467.49 245.715H1471.49C1471.76 246.086 1473.39 245.715 1473.84 245.715C1474.3 245.715 1476.04 244.756 1476.32 244.385L1477.49 246.02C1479.98 242.642 1537.01 164.196 1537.01 130.05C1537.01 94.5775 1508.15 65.7154 1472.68 65.7154ZM1472.68 107.006C1485.39 107.006 1495.72 117.341 1495.72 130.05C1495.72 142.753 1485.39 153.095 1472.68 153.095C1459.97 153.095 1449.63 142.753 1449.63 130.05C1449.63 117.341 1459.97 107.006 1472.68 107.006Z" fill="#F9F9F9"/>
@@ -281,7 +281,7 @@ export default function Home() {
                         loop={true}  
                         navigation={{
                           nextEl: '.space-slider__control--next',
-                          prevEll: '.space-slider__control--prev'
+                          prevEl: '.space-slider__control--prev'
                         }} 
                         modules={[Navigation]}
                         className="space-slider swiper"
@@ -456,7 +456,7 @@ export default function Home() {
               </div>
             </section>
 
-            <section class="scale">
+            <section class="scale" id="scale">
                 <div class="container">
                     <div class="scale__title-wrap">
                         <h2 class="scale__title">Масштаб для бизнеса</h2>
