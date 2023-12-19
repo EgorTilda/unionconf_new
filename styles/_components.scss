@@ -44,8 +44,10 @@
 .header {
     padding: 1.2rem 0;
     width: 100%;
-    // background: linear-gradient(180deg, #5456a3 0%, #4c4d99 100%);
+    background: linear-gradient(90deg, #4F519F 0%, #4D4F9D 21.35%, #4D4F9D 80.1%, #4F519F 100%);
+    // background: linear-gradient(90deg, #4F519F 0%, #4D4F9D 21.35%, #4D4F9D 80.1%, #4F519F 100%);
     min-height: 6rem;
+    z-index: 1000;
 }
 
 .header__row {
@@ -97,6 +99,9 @@
         font-weight: 700;
         font-size: 16px;
         padding: 0.4em 3.6em;
+    }
+    @media screen and (max-width: 600px) {
+       max-width: 160px;
     }
 }
 

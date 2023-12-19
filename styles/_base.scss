@@ -90,7 +90,7 @@ legend {
 
 // Font
 @font-face {
-    font-family: 'Nebulas Extra';
+    font-family: 'Nebulas';
     src: url('./../public/font/Nebulas/Nebulas-ExtraBold.eot');
     src: url('./../public/font/Nebulas/Nebulas-ExtraBold.eot?#iefix') format('embedded-opentype'),
         url('./../public/font/Nebulas/Nebulas-ExtraBold.woff2') format('woff2'),
@@ -212,5 +212,5 @@ html {
     overflow-x: hidden; 
 }
 .page-top {
-    background: linear-gradient(180deg, #5456a3 0%, #4c4d99 100%);
+    // background: linear-gradient(180deg, #5456a3 0%, #4c4d99 100%);
 }
