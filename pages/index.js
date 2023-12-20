@@ -22,46 +22,42 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="page">
-          <div className="page-top"  id="main-section">
-            <Header />
-            <section className="intro">
-                <div className="container intro__container">
-                  <div className="intro__inner">
-                      <div className="intro__cta-content">
-                                <h1 className="intro__title">Весь мир online</h1>
-                                <p className="intro__subtitle">на вашем событии Unionconf</p>
-                        </div>
-                  </div>
-                </div>
-                <div className="intro__btn-wrap">
-                    <button class="btn-cta intro__btn">Перейти</button>
-                </div>
-            </section>
-          </div>
+      
+            <div className="page-top"  id="main-section">
+                <Header />
+                <section className="intro">
+                    <div className="container intro__container">
+                    <div className="intro__inner">
+                        <div className="intro__cta-content">
+                                    <h1 className="intro__title">Весь мир online</h1>
+                                    <p className="intro__subtitle">на вашем событии Unionconf</p>
+                            </div>
+                    </div>
+                    </div>
+                    <div className="intro__btn-wrap">
+                        <button class="btn-cta intro__btn">Перейти</button>
+                    </div>
+                </section>
+            </div>
+
           <main className="main">
             <section className="about" id="about">
                 <h2 className="ticker-title">
                     <div className="ticker-title__inner">
-                        <span className="ticker-title__item">Web3</span>
-                        <span className="ticker-title__item">Выставки</span>
-                        <span className="ticker-title__item">Хакатоны</span>
-                        <span className="ticker-title__item">Конференции</span>
-                        <span className="ticker-title__item">Презентации</span>
-                        <span className="ticker-title__item">Web3</span>
-                        <span className="ticker-title__item">Выставки</span>
-                        <span className="ticker-title__item">Хакатоны</span>
-                        <span className="ticker-title__item">Конференции</span>
-                        <span className="ticker-title__item">Презентации</span>
-                        <span className="ticker-title__item">Web3</span>
-                        <span className="ticker-title__item">Выставки</span>
-                        <span className="ticker-title__item">Хакатоны</span>
-                        <span className="ticker-title__item">Конференции</span>
-                        <span className="ticker-title__item">Презентации</span>
-                        <span className="ticker-title__item">Web3</span>
-                        <span className="ticker-title__item">Выставки</span>
-                        <span className="ticker-title__item">Хакатоны</span>
-                        <span className="ticker-title__item">Конференции</span>
-                        <span className="ticker-title__item">Презентации</span>
+                        <span className="ticker-title__item">
+                            <span>Web3</span>
+                            <span>Выставки</span>
+                            <span>Хакатоны</span>
+                            <span>Конференции</span>
+                            <span>Презентации</span>
+                        </span>
+                        <span className="ticker-title__item">
+                            <span>Web3</span>
+                            <span>Выставки</span>
+                            <span>Хакатоны</span>
+                            <span>Конференции</span>
+                            <span>Презентации</span>
+                        </span>
                     </div>
                 </h2>
                 
@@ -78,6 +74,15 @@ export default function Home() {
                                         <h3 className="about-card__title">
                                           Цифровые <br /> пространства
                                         </h3>
+                                        <div className="about-card__back-content">
+                                            <div className="about-card__back-inner">
+                                                <img className="about-card__back-img" src="./img/about-block/Location-icon.png"/>
+                                                <p className="about-card__back-text">
+                                                    Все события проходят 
+                                                    в брендированных виртуальных локациях
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -87,6 +92,14 @@ export default function Home() {
                                         <h3 className="about-card__title">
                                             Нетворк <br /> &CRM
                                         </h3>
+                                        <div className="about-card__back-content">
+                                            <div className="about-card__back-inner">
+                                                <img className="about-card__back-img" src="./img/about-block/Scale-icon.png"/>
+                                                <p className="about-card__back-text">
+                                                    Удобный функционал для коммуникации с клиентами и партнёрами во время мероприятия
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -96,6 +109,15 @@ export default function Home() {
                                         <h3 className="about-card__title">
                                           Быстрый <br /> доступ
                                         </h3>
+                                        <div className="about-card__back-content">
+                                            <div className="about-card__back-inner">
+                                                <img className="about-card__back-img" src="./img/about-block/Desctop-icon.png"/>
+                                                <p className="about-card__back-text">
+                                                    Удобное подключение 
+                                                    к мероприятию с компьютера
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -103,8 +125,17 @@ export default function Home() {
                             <div className="about-card">
                                     <div className="about-card__inner about-card__inner--gray">
                                         <h3 className="about-card__title">
-                                          Презентация <br /> продукта
+                                                Презентация <br /> продукта
                                         </h3>
+                                        <div className="about-card__back-content">
+                                            <div className="about-card__back-inner">
+                                                <img className="about-card__back-img" src="./img/about-block/Game-icon.png"/>
+                                                <p className="about-card__back-text">
+                                                        Вовлечение участников геймификацией 
+                                                        и интерактивными стендами вашего бизнеса
+                                                </p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -135,14 +166,26 @@ export default function Home() {
                     </div>
                     <h2 className="ticker-title">
                         <div className="ticker-title__inner">
-                            <span className="ticker-title__item">Круглые столы</span>
-                            <span className="ticker-title__item">Хакатоны</span>
-                            <span className="ticker-title__item">Поиск соискателей и партнеров</span>
-                            <span className="ticker-title__item">Нетворкинг</span>
-                            <span className="ticker-title__item">Круглые столы</span>
-                            <span className="ticker-title__item">Хакатоны</span>
-                            <span className="ticker-title__item">Поиск соискателей и партнеров</span>
-                            <span className="ticker-title__item">Нетворкинг</span>
+                            <div className="ticker-title__inner">
+                                <span className="ticker-title__item">
+                                    <span>Круглые столы</span>
+                                    <span>Хакатоны</span>
+                                    <span>Поиск соискателей и партнеров</span>
+                                    <span>Нетворкинг</span>
+                                </span>
+                                <span className="ticker-title__item">
+                                    <span>Круглые столы</span>
+                                    <span>Хакатоны</span>
+                                    <span>Поиск соискателей и партнеров</span>
+                                    <span>Нетворкинг</span>
+                                </span>
+                                <span className="ticker-title__item">
+                                    <span>Круглые столы</span>
+                                    <span>Хакатоны</span>
+                                    <span>Поиск соискателей и партнеров</span>
+                                    <span>Нетворкинг</span>
+                                </span>
+                            </div>
                         </div>
                     </h2>
                    
@@ -529,11 +572,12 @@ export default function Home() {
                             <form className="contact-form" action="#" method="POST" name="form-contact">
                                 <fieldset className="contact-form__fields">
                                     <legend className="contact-form__title">Оставьте контактные данные:</legend>
-                                    <input type="mail" className="contact-form__field form-field"
+                                    <input type="email" className="contact-form__field form-field"
                                         placeholder="Почта: example@mail.com" />
                                     <br />
-                                    <input type="phone" className="contact-form__field form-field"
+                                    <input type="tel" className="contact-form__field form-field"
                                         placeholder="Телефон: +7(916)111-11-11" />
+                                    <button type="submit" className="contact-form__btn">Отправить</button>
                                 </fieldset>
                             </form>
                         </div>
@@ -603,6 +647,7 @@ export default function Home() {
                             </div>
                             <div className="copyright">
                                 <img src="./img/logo-abb.svg" alt="UC Лого" />
+                                <span>ООО "ЮНИОНКОНФ" ИНН 9731120123</span>
                                 <span>Unionconf, 2023. Все права защищены.</span>
                             </div>
                             <div className="footer__links--h">

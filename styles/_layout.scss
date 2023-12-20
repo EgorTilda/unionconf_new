@@ -67,10 +67,6 @@
     height: 100%;
 }
 .intro {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: space-around;
-    // align-items: center;
     position: relative;
     height: 100%;
 }
@@ -89,6 +85,7 @@
        bottom: 20vh;
     }
 }
+
 
 // About
 .about {
@@ -500,7 +497,6 @@
 // Contact
 .contact__wrap {
     width: 100%;
-    border-radius: 4.375rem;
     background: $white;
 }
 .contact {
@@ -547,6 +543,7 @@
     justify-content: space-between;
     margin-bottom: 2rem;
 }
+
 
 .contact__img {
     flex-grow: 1;
@@ -696,6 +693,9 @@
 .copyright {
     @media screen and (max-width: 590px) {
         padding-top: 32px;
+    }
+    span:not(:last-child) {
+        margin: 15px 0;
     }
 }
 
