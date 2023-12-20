@@ -42,6 +42,7 @@
 }
 
 .header {
+    position: relative;
     padding: 1.2rem 0;
     width: 100%;
     background: linear-gradient(90deg, #4F519F 0%, #4D4F9D 21.35%, #4D4F9D 80.1%, #4F519F 100%);
@@ -53,11 +54,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.menu-btn {
-    visibility: hidden;
-    width: 188px;
 }
 
 //btn-cta
@@ -746,6 +742,58 @@
     }
 }
 
+// Menu
+.menu-btn {
+    visibility: hidden;
+    width: 188px;
+}
+
+.menu.active {
+    transform: translate3d(0, 78px, 0);
+}
+.menu {
+    width: 62%;
+    max-width: 200px;
+    min-height: 320px;
+    background-color: #4e509e;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate3d(100%, 78px, 0);
+    transition: .2s;
+    padding: 27px;
+    z-index: 500;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    &__link {
+        color: $primary;
+        font-size: 16px;
+        font-weight: 800;
+        padding: 0.8rem 1.6rem;
+        border-radius: 2rem;
+        background: #fff;
+        text-align: center;
+        transition: color .2s ease-in;
+
+        &:not(:last-child),
+        &:not(:first-child) {
+            margin-bottom: 16px;
+        }
+        &--active {
+            color: $secondary;
+        }
+        &--first {
+            margin: 26px 0;
+        }
+        &:hover {
+            color: $secondary;
+        }
+    }
+}
+
 // Media
 @media screen and (max-width: 768px) {
     .navbar {
@@ -764,42 +812,4 @@
     }
 }
 
-// Menu
-.menu {
-    visibility: hidden;
-    width: 62%;
-    max-width: 200px;
-    min-height: 292px;
-    background-color: #4e509e;
-    position: fixed;
-    top: 0;
-    right: 0;
-    transform: translateY(95px);
-    padding: 27px;
-    z-index: 500;
 
-    &__inner {
-        display: flex;
-        flex-direction: column;
-    }
-    &__link {
-        color: $primary;
-        font-size: 16px;
-        font-weight: 800;
-        padding: 0.8rem 1.6rem;
-        border-radius: 2rem;
-        background: #fff;
-        text-align: center;
-
-        &:not(:last-child),
-        &:not(:first-child) {
-            margin-bottom: 16px;
-        }
-        &--active {
-            color: $secondary;
-        }
-        &--first {
-            margin: 26px 0;
-        }
-    }
-}

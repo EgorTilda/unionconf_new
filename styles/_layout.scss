@@ -511,7 +511,7 @@
         background-color: $white;
         position: absolute;
         top: 0;
-        transform: translateY(-100%);
+        transform: translateY(-98%);
     }
     &:after {
         content: "";
@@ -522,7 +522,7 @@
         background-color: $white;
         position: absolute;
         bottom: 0;
-        transform: translateY(100%);
+        transform: translateY(98%);
     }
 }
 

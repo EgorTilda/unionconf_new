@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import Header from './../components/Header';
-import Menu from './../components/Menu';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
@@ -23,7 +22,7 @@ export default function Home() {
       </Head>
       <div className="page">
       
-            <div className="page-top"  id="main-section">
+            <div className="page-top"  id="main">
                 <Header />
                 <section className="intro">
                     <div className="container intro__container">
@@ -661,8 +660,6 @@ export default function Home() {
             </div>
 
         </footer>
-
-        <Menu />
       </div>
     </>
   )
