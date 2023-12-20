@@ -373,8 +373,23 @@
         }
     }
 }
+.stat-elem__content {
+    
+    @media screen and (max-width: 576px) {
+        max-width: 85%;
+    }
+}
+.stat-elem__content--left {
+    align-self: flex-start;
+}
+.stat-elem__content--right {
+    align-self: flex-end;
+}
 .stat-elem--left {
     text-align: left;
+    @media screen and (max-width: 576px) {
+        align-self: flex-start;
+    }
 }
 .stat-elem--right {
     text-align: right;

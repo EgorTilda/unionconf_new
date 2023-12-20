@@ -144,13 +144,13 @@ export default function Home() {
                             <div className="stat-elem stat-elem--left">
                                 <div className="stat-elem__data">
                                     <span className="stat-elem__value">1000+</span>
-                                    дополнительной аудитории к Вашему событию
+                                    <span className="stat-elem__content stat-elem__content--left">дополнительной аудитории к Вашему событию</span>
                                 </div>
                             </div>
 
                             <div className="about__img">
                                 <picture>
-                                    <source srcset="./img/about-block/avatar-mobile.png" media="(max-width: 425px)" />
+                                    <source srcset="./img/about-block/avatar-mobile.png" media="(max-width: 576px)" />
                                     <img src="./img/about-block/avatar-complex.png" alt="Avatar"/>
                                 </picture>
                             </div>
@@ -158,7 +158,7 @@ export default function Home() {
                             <div className="stat-elem stat-elem--right">
                                 <div className="stat-elem__data">
                                     <span className="stat-elem__value">8000+</span>
-                                    online-мероприятий проходят в мире каждый час
+                                    <span className="stat-elem__content stat-elem__content--right">online-мероприятий проходят в мире каждый час</span>
                                 </div>
                             </div>
                         </div>
