@@ -347,6 +347,9 @@
     background-position: right 0;
     background-repeat: no-repeat;
     padding-bottom: 10rem;
+    @media screen and (max-width: 590px) {
+        padding-bottom: 0;
+    }
 }
 .spaces__path {
     width: 100%;
@@ -719,7 +722,7 @@
     span:not(:last-child) {
         margin: 15px 0;
     }
-    @media screen and (max-width: 360px){
+    @media screen and (max-width: 576px){
         padding-top: 32px;
         align-self: center;
     }
@@ -742,7 +745,7 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 30px;
-    @media screen and (max-width: 360px){
+    @media screen and (max-width: 576px){
         flex-direction: column;
         align-items: flex-start;
     }

@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { useState, useRef, useEffect } from "react";
 import Header from './../components/Header';
 import FloatBtn from './../components/FloatBtn';
+import AboutCard from './../components/AboutCard';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
@@ -81,75 +82,26 @@ export default function Home() {
 
                         <div className="about__card-row">
                             <div className="about-card-wrapper">
-                                <div className="about-card">
-                                    <div className="about-card__inner">
-                                        <h3 className="about-card__title">
-                                          Цифровые <br /> пространства
-                                        </h3>
-                                        <div className="about-card__back-content">
-                                            <div className="about-card__back-inner">
-                                                <img className="about-card__back-img" src="./img/about-block/Location-icon.png"/>
-                                                <p className="about-card__back-text">
-                                                    Все события проходят 
-                                                    в брендированных виртуальных локациях
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <AboutCard title="Цифровые пространcтва" 
+                                text="Все события проходят в брендированных виртуальных локациях"
+                                srcIcon="Location-icon.png" />
                             </div>
                             <div className="about-card-wrapper">
-                            <div className="about-card">
-                                    <div className="about-card__inner about-card__inner--gray">
-                                        <h3 className="about-card__title">
-                                            Нетворк <br /> &CRM
-                                        </h3>
-                                        <div className="about-card__back-content">
-                                            <div className="about-card__back-inner">
-                                                <img className="about-card__back-img" src="./img/about-block/Scale-icon.png"/>
-                                                <p className="about-card__back-text">
-                                                    Удобный функционал для коммуникации с клиентами и партнёрами во время мероприятия
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <AboutCard title="Нетворк&CRM" 
+                                    text="Удобный функционал для коммуникации с клиентами и партнёрами во время мероприятия"
+                                    isGray
+                                    srcIcon="Scale-icon.png" />
                             </div>
                             <div className="about-card-wrapper about-card__item--3">
-                            <div className="about-card">
-                                    <div className="about-card__inner">
-                                        <h3 className="about-card__title">
-                                          Быстрый <br /> доступ
-                                        </h3>
-                                        <div className="about-card__back-content">
-                                            <div className="about-card__back-inner">
-                                                <img className="about-card__back-img" src="./img/about-block/Desctop-icon.png"/>
-                                                <p className="about-card__back-text">
-                                                    Удобное подключение 
-                                                    к мероприятию с компьютера
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <AboutCard title="Быстрый доступ" 
+                                        text="Удобное подключение к мероприятию с компьютера"
+                                        srcIcon="Desctop-icon.png" />
                             </div>
                             <div className="about-card-wrapper about-card__item--4">
-                            <div className="about-card">
-                                    <div className="about-card__inner about-card__inner--gray">
-                                        <h3 className="about-card__title">
-                                                Презентация <br /> продукта
-                                        </h3>
-                                        <div className="about-card__back-content">
-                                            <div className="about-card__back-inner">
-                                                <img className="about-card__back-img" src="./img/about-block/Game-icon.png"/>
-                                                <p className="about-card__back-text">
-                                                        Вовлечение участников геймификацией 
-                                                        и интерактивными стендами вашего бизнеса
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                <AboutCard title="Презентация продукта" 
+                                            text="Вовлечение участников геймификацией и интерактивными стендами вашего бизнеса"
+                                            isGray
+                                            srcIcon="Game-icon.png" />
                             </div>
                         </div>
 
