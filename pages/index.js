@@ -1,6 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image';
+import { useState, useRef, useEffect } from "react";
 import Header from './../components/Header';
+import FloatBtn from './../components/FloatBtn';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
@@ -12,6 +13,18 @@ import 'swiper/css/scrollbar';
 import 'swiper/css';
 
 export default function Home() {
+  const ref = useRef(null);
+  const [isVisibleText, setVisibleText] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+        const entry = entries[0];
+        setVisibleText(entry.isIntersecting);
+    });
+    observer.observe(ref.current);
+  }, []);
+ 
+
   return (
     <>
       <Head>
@@ -34,7 +47,7 @@ export default function Home() {
                     </div>
                     </div>
                     <div className="intro__btn-wrap">
-                        <button class="btn-cta intro__btn">Перейти</button>
+                        <button class="btn-cta intro__btn">Попробовать</button>
                     </div>
                 </section>
             </div>
@@ -140,7 +153,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div className="about__stat">
+                        {/* <div className="about__stat">
                             <div className="stat-elem stat-elem--left">
                                 <div className="stat-elem__data">
                                     <span className="stat-elem__value">1000+</span>
@@ -161,38 +174,19 @@ export default function Home() {
                                     <span className="stat-elem__content stat-elem__content--right">online-мероприятий проходят в мире каждый час</span>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
-                    <h2 className="ticker-title">
-                        <div className="ticker-title__inner">
-                            <div className="ticker-title__inner">
-                                <span className="ticker-title__item">
-                                    <span>Круглые столы</span>
-                                    <span>Хакатоны</span>
-                                    <span>Поиск соискателей и партнеров</span>
-                                    <span>Нетворкинг</span>
-                                </span>
-                                <span className="ticker-title__item">
-                                    <span>Круглые столы</span>
-                                    <span>Хакатоны</span>
-                                    <span>Поиск соискателей и партнеров</span>
-                                    <span>Нетворкинг</span>
-                                </span>
-                                <span className="ticker-title__item">
-                                    <span>Круглые столы</span>
-                                    <span>Хакатоны</span>
-                                    <span>Поиск соискателей и партнеров</span>
-                                    <span>Нетворкинг</span>
-                                </span>
-                            </div>
-                        </div>
-                    </h2>
-                   
                 </div>
             </section>
 
             <section className="network">
                 <div className="network__inner">
+                    <div className="container">
+                        <h2 ref={ref} className= {isVisibleText ? 'network__main-title text-anim active' : 'network__main-title text-anim'}>
+                            Хотите создать виртуальное событие? 
+                            Вместе с Unionconf это легко!
+                        </h2>
+                    </div>
                     <div className="network__content-wrap">
                         <div className="container">
                             <div className="network__content">
@@ -287,28 +281,40 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <nav className="benefits__nav">
-                    <a href="#" className="benefits__link">
-                        <img src="./icon/arrow-link.svg" alt="Перейти" className="benefits__link-icon"/>
-                        <span>
-                            будь <br/>
-                            СПИКЕРом <br/>
-                            партнёром <br/>
-                            слушателем <br/>
-                        </span>
-                    </a>
-                </nav>
+                <h2 className="ticker-title">
+                        <div className="ticker-title__inner">
+                            <div className="ticker-title__inner">
+                                <span className="ticker-title__item">
+                                    <span>Круглые столы</span>
+                                    <span>Хакатоны</span>
+                                    <span>Поиск соискателей и партнеров</span>
+                                    <span>Нетворкинг</span>
+                                </span>
+                                <span className="ticker-title__item">
+                                    <span>Круглые столы</span>
+                                    <span>Хакатоны</span>
+                                    <span>Поиск соискателей и партнеров</span>
+                                    <span>Нетворкинг</span>
+                                </span>
+                                <span className="ticker-title__item">
+                                    <span>Круглые столы</span>
+                                    <span>Хакатоны</span>
+                                    <span>Поиск соискателей и партнеров</span>
+                                    <span>Нетворкинг</span>
+                                </span>
+                            </div>
+                        </div>
+                </h2>
             </section>
 
             <section className="spaces" id="spaces">
                 <div className="spaces__path">
-                <svg width="1920" height="252" viewBox="0 0 1920 252" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1472.68 65.7154C1437.2 65.7154 1408.35 94.5775 1408.35 130.05C1408.35 164.196 1465 242.337 1467.49 245.715H1471.49C1471.76 246.086 1473.39 245.715 1473.84 245.715C1474.3 245.715 1476.04 244.756 1476.32 244.385L1477.49 246.02C1479.98 242.642 1537.01 164.196 1537.01 130.05C1537.01 94.5775 1508.15 65.7154 1472.68 65.7154ZM1472.68 107.006C1485.39 107.006 1495.72 117.341 1495.72 130.05C1495.72 142.753 1485.39 153.095 1472.68 153.095C1459.97 153.095 1449.63 142.753 1449.63 130.05C1449.63 117.341 1459.97 107.006 1472.68 107.006Z" fill="#F9F9F9"/>
-                    <path d="M1451.99 244.578H1493.34" stroke="#8CB0FA" stroke-width="3" stroke-linecap="round"/>
-                    <circle cx="1472.49" cy="130.215" r="23.5" fill="#DCF36E"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V221.451C0 185.552 29.1016 156.451 65 156.451H66.6025L1272.47 156.451C1316.26 148.278 1355.17 123.172 1380.66 86.455L1382 84.5314L1402.85 64.3003C1423.32 44.4352 1449.76 35.5998 1475.56 36.9105C1506.82 38.3822 1537.18 54.7813 1554.81 84.5314C1582.64 123.074 1625.11 148.461 1672.24 154.726L1685.21 156.451H1855C1890.9 156.451 1920 185.552 1920 221.451V0H0Z" fill="#FDFDFD"/>
-                </svg>
-     
+                    <svg width="1920" height="323" viewBox="0 0 1920 323" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1214.7 137.375C1179.23 137.375 1150.38 166.237 1150.38 201.71C1150.38 235.855 1207.03 313.997 1209.52 317.375H1213.52C1213.79 317.746 1215.41 317.375 1215.87 317.375C1216.33 317.375 1218.07 316.416 1218.35 316.045L1219.52 317.68C1222 314.301 1279.04 235.855 1279.04 201.71C1279.04 166.237 1250.18 137.375 1214.7 137.375ZM1214.7 178.665C1227.41 178.665 1237.75 189.001 1237.75 201.71C1237.75 214.413 1227.41 224.755 1214.7 224.755C1202 224.755 1191.66 214.413 1191.66 201.71C1191.66 189.001 1202 178.665 1214.7 178.665Z" fill="#F9F9F9"/>
+                        <path d="M1194.02 316.238H1235.36" stroke="#8CB0FA" stroke-width="3" stroke-linecap="round"/>
+                        <circle cx="1214.52" cy="201.875" r="23.5" fill="#DCF36E"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V291.975C0 236.746 44.7734 191.975 100 191.975H952.812C1001.48 191.975 1048.38 173.686 1084.2 140.734C1156.54 74.1953 1267.2 72.2344 1341.85 136.17L1349.37 142.615C1386.56 174.469 1433.91 191.975 1482.88 191.975H1842C1885.08 191.975 1920 226.896 1920 269.975V0H0Z" fill="#FDFDFD"/>
+                    </svg>
                 </div>
                 <div className="spaces__container container">
                     <div className="spaces__text-content">
@@ -328,6 +334,17 @@ export default function Home() {
                         modules={[Navigation]}
                         className="space-slider swiper"
                       >
+                        <div className="space-slider__controls">
+                            <div className="space-slider__controls-inner">
+                                <div className="space-slider__control space-slider__control--mobile space-slider__control--prev">
+                                                    →
+                                </div>
+                                <div className="space-slider__control space-slider__control--mobile space-slider__control--next">
+                                                    →
+                                </div>
+                            </div>
+                        </div>
+                        
                         <SwiperSlide>
                             <div className="swiper-slide">
                                 <div className="space-slider__slide">
@@ -335,7 +352,10 @@ export default function Home() {
                                         <div className="space-slider__control space-slider__control--prev">
                                             →
                                         </div>
-                                        <img src="./img/digital-space/slide-1.png" alt="Conference Hall"/>
+                                        <div>
+                                            <h3 className="space-slider__title">Conference Hall</h3>
+                                            <img src="./img/digital-space/slide-1.png" alt="Conference Hall"/>
+                                        </div>
                                         <div className="space-slider__control space-slider__control--next">
                                             →
                                         </div>
@@ -369,7 +389,10 @@ export default function Home() {
                                             <div className="space-slider__control space-slider__control--prev">
                                                 →
                                             </div>
-                                            <img src="./img/digital-space/slide-2.png" alt="Conference Hall" />
+                                            <div>
+                                                <h3 className="space-slider__title">Meet Up</h3>
+                                                <img src="./img/digital-space/slide-2.png" alt="Meet Up"/>
+                                            </div>
                                             <div className="space-slider__control space-slider__control--next">
                                                 →
                                             </div>
@@ -402,7 +425,10 @@ export default function Home() {
                                         <div className="space-slider__control space-slider__control--prev">
                                             →
                                         </div>
-                                        <img src="./img/digital-space/slide-3.png" alt="Conference Hall" />
+                                        <div>
+                                            <h3 className="space-slider__title">Japan Lounge</h3>
+                                            <img src="./img/digital-space/slide-3.png" alt="Japan Lounge"/>
+                                        </div>
                                         <div className="space-slider__control space-slider__control--next">
                                             →
                                         </div>
@@ -434,7 +460,10 @@ export default function Home() {
                                         <div className="space-slider__control space-slider__control--prev">
                                             →
                                         </div>
-                                        <img src="./img/digital-space/slide-4.png" alt="Conference Hall"/>
+                                        <div>
+                                            <h3 className="space-slider__title">Arabian Night</h3>
+                                            <img src="./img/digital-space/slide-4.png" alt="Arabian Night"/>
+                                        </div>
                                         <div className="space-slider__control space-slider__control--next">
                                             →
                                         </div>
@@ -468,7 +497,10 @@ export default function Home() {
                                         <div className="space-slider__control space-slider__control--prev">
                                             →
                                         </div>
-                                        <img src="./img/digital-space/slide-5.png" alt="Conference Hall"/>
+                                        <div>
+                                            <h3 className="space-slider__title">Spaceship</h3>
+                                            <img src="./img/digital-space/slide-5.png" alt="Spaceship"/>
+                                        </div>
                                         <div className="space-slider__control space-slider__control--next">
                                             →
                                         </div>
@@ -573,7 +605,6 @@ export default function Home() {
                                     <legend className="contact-form__title">Оставьте контактные данные:</legend>
                                     <input type="email" className="contact-form__field form-field"
                                         placeholder="Почта: example@mail.com" />
-                                    <br />
                                     <input type="tel" className="contact-form__field form-field"
                                         placeholder="Телефон: +7(916)111-11-11" />
                                     <button type="submit" className="contact-form__btn">Отправить</button>
@@ -659,7 +690,9 @@ export default function Home() {
                 </div>
             </div>
 
-        </footer>
+          </footer>
+
+        <FloatBtn />
       </div>
     </>
   )
