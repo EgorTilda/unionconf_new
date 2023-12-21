@@ -39,16 +39,17 @@ export default function Home() {
             <div className="page-top"  id="main">
                 <Header />
                 <section className="intro">
-                    <div className="container intro__container">
-                    <div className="intro__inner">
-                        <div className="intro__cta-content">
-                                    <h1 className="intro__title">Весь мир online</h1>
-                                    <p className="intro__subtitle">на вашем событии Unionconf</p>
+                    <div className="intro__content">
+                        <div className="intro__text-content">
+                            <img className="intro__img" src="./img/header/avatars.png" />
+                            <h1 className="intro__title">Весь мир онлайн</h1>
+                            <div className="intro__subtitle">
+                                <p>
+                                    на вашем событии в Unionconf
+                                </p>
                             </div>
-                    </div>
-                    </div>
-                    <div className="intro__btn-wrap">
-                        <button class="btn-cta intro__btn">Попробовать</button>
+                        </div>
+                        <a className="intro__btn-cta btn-cta">Попробовать</a>
                     </div>
                 </section>
             </div>

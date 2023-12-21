@@ -1,40 +1,118 @@
 // Intro
+// .intro {
+//     width: 100%;
+//     min-height: 120vh;
+//     background-image: url("./../public/img/header/back.jpg");
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     padding-bottom: 50px;
+
+//     @media screen and (max-width: 600px) {
+//         min-height: 280px;
+//         // margin-top: 20px;
+//         // background-image: url("./../public/img/header/back-mobile.jpg");
+//         background-size: cover;
+//     }
+// }
+// .intro__cta-content {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     padding-top: 32vh;
+//     padding-bottom: 18rem;
+
+//     @media screen and (max-width: 1200px) {
+//         padding-top: 200px;
+//     }
+//     @media screen and (max-width: 650px) {
+//         padding-top: 40vh;
+//     }
+//     @media screen and (max-width: 600px) {
+//         padding-top: 116px;
+//     }
+// }
+// .intro__container {
+//     height: 100%;
+// }
+// .intro {
+//     position: relative;
+//     height: 100%;
+// }
+// .intro__btn-wrap {
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     position: absolute;
+//     bottom: 0;
+//     transform: translateY(-100%);
+//     padding-bottom: 40px;
+//     @media screen and (max-width: 600px) {
+//         padding-bottom: 10px;
+//     }
+//     @media screen and (min-height: 700px) and (min-width: 576px) {
+//         bottom: 20vh;
+//     }
+// }
+
+.page-top {
+   
+}
 .intro {
-    width: 100%;
-    min-height: 120vh;
-    background-image: url("./../public/img/header/back.jpg");
+    background-image: url('./../public/img/header/back.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-x: center;
+    min-height: 140vh;
     padding-bottom: 50px;
 
-    @media screen and (max-width: 600px) {
-        min-height: 280px;
-        // margin-top: 20px;
-        // background-image: url("./../public/img/header/back-mobile.jpg");
+    @media screen and (max-width: 992px) {
         background-size: cover;
+        min-height: 320px;
+    }
+    @media screen and (max-width: 576px) {
+        background-image: url('./../public/img/header/back-mobile.jpg');
+        background-size: cover;
+        min-height: 320px;
     }
 }
-.intro__cta-content {
+.intro__content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 32vh;
-    padding-bottom: 18rem;
-
-    @media screen and (max-width: 1200px) {
-        padding-top: 200px;
+    justify-content: center;
+    padding-top: 80px;
+    @media screen and (max-width: 992px) {
+        padding-top: 50px;
     }
-    @media screen and (max-width: 650px) {
-        padding-top: 40vh;
-    }
-    @media screen and (max-width: 600px) {
-        padding-top: 116px;
+    @media screen and (max-width: 576px) {
+        padding-top: 25px;
     }
 }
+.intro__text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25%;
+    @media screen and (max-width: 576px) {
+        margin-bottom: 40%;
+    }
+}
+
+.intro__img {
+    max-width: 360px;
+    @media screen and (max-width: 992px) {
+        max-width: 200px;
+    }
+    @media screen and (max-width: 576px) {
+        max-width: 100px;
+    }
+}
+
 .intro__title {
     color: $primary;
-    font-size: 6.87rem;
+    font-size: 6rem;
     font-weight: 800;
     line-height: 91%;
     position: relative;
@@ -62,27 +140,8 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-.intro__container {
-    height: 100%;
-}
-.intro {
-    position: relative;
-    height: 100%;
-}
-.intro__btn-wrap {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    transform: translateY(-100%);
-    padding-bottom: 40px;
     @media screen and (max-width: 600px) {
-        padding-bottom: 10px;
-    }
-    @media screen and (min-height: 700px) and (min-width: 576px) {
-        bottom: 20vh;
+        font-size: 16px;
     }
 }
 

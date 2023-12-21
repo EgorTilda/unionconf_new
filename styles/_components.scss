@@ -75,6 +75,7 @@
     font-weight: 700;
     line-height: 112%;
     transition: background 100s ease-in-out;
+    cursor: pointer;
 
     &:before {
         content: "";
@@ -155,7 +156,7 @@
     position: relative;
     transform: scale(1);
     will-change: transform;
-    animation: textAnim .6s cubic-bezier(0.2, 0.85, 0.4, 1.275) paused;
+    animation: textAnim .5s cubic-bezier(0.2, 0.85, 0.4, 1.275) paused;
 }
 .text-anim.active {
     animation-play-state: running;
@@ -250,7 +251,7 @@
     padding-top: -1px;
     padding-bottom: 28px;
     cursor: pointer;
-    transition: transform .5s cubic-bezier(0.2, 0.85, 0.4, 1.275);
+    transition: transform .7s cubic-bezier(0.2, 0.85, 0.4, 1.275);
     will-change: transform;
     @media screen and (max-width: 1024px) {
         min-height: 32rem;
