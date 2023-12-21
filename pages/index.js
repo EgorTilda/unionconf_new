@@ -306,7 +306,7 @@ export default function Home() {
                                             →
                                         </div>
                                         <div>
-                                            <h3 className="space-slider__title">Conference Hall</h3>
+                                            <h3 className="space-slider__title">Выставочная зона</h3>
                                             <img src="./img/digital-space/slide-1.png" alt="Conference Hall"/>
                                         </div>
                                         <div className="space-slider__control space-slider__control--next">
@@ -315,7 +315,7 @@ export default function Home() {
                                     </div>
                                     <div className="space-slider__main">
                                         <div className="space-slider__content">
-                                            <h3 className="space-slider__title">Conference Hall</h3>
+                                            <h3 className="space-slider__title">Выставочная зона</h3>
                                             <div className="space-slider__text">
                                                 <p>
                                                     Место, в котором вы можете разместить информацию
@@ -343,7 +343,7 @@ export default function Home() {
                                                 →
                                             </div>
                                             <div>
-                                                <h3 className="space-slider__title">Meet Up</h3>
+                                                <h3 className="space-slider__title"> Конференц - зал</h3>
                                                 <img src="./img/digital-space/slide-2.png" alt="Meet Up"/>
                                             </div>
                                             <div className="space-slider__control space-slider__control--next">
@@ -352,7 +352,7 @@ export default function Home() {
                                         </div>
                                         <div className="space-slider__main">
                                             <div className="space-slider__content">
-                                                <h3 className="space-slider__title">Meet up</h3>
+                                                <h3 className="space-slider__title">Конференц - зал</h3>
                                                 <div className="space-slider__text">
                                                     <p>
                                                         Место для выступления спикеров, располагающее
@@ -379,7 +379,7 @@ export default function Home() {
                                             →
                                         </div>
                                         <div>
-                                            <h3 className="space-slider__title">Japan Lounge</h3>
+                                            <h3 className="space-slider__title">Японская гостиная</h3>
                                             <img src="./img/digital-space/slide-3.png" alt="Japan Lounge"/>
                                         </div>
                                         <div className="space-slider__control space-slider__control--next">
@@ -388,7 +388,7 @@ export default function Home() {
                                     </div>
                                     <div className="space-slider__main">
                                         <div className="space-slider__content">
-                                            <h3 className="space-slider__title">Japan Lounge</h3>
+                                            <h3 className="space-slider__title">Японская гостиная</h3>
                                             <div className="space-slider__text">
                                                 <p>
                                                     Локация в спокойном японском стиле, которая подойдет для проведения
@@ -414,7 +414,7 @@ export default function Home() {
                                             →
                                         </div>
                                         <div>
-                                            <h3 className="space-slider__title">Arabian Night</h3>
+                                            <h3 className="space-slider__title">Арабская ночь</h3>
                                             <img src="./img/digital-space/slide-4.png" alt="Arabian Night"/>
                                         </div>
                                         <div className="space-slider__control space-slider__control--next">
@@ -423,7 +423,7 @@ export default function Home() {
                                     </div>
                                     <div className="space-slider__main">
                                         <div className="space-slider__content">
-                                            <h3 className="space-slider__title">Arabian Night</h3>
+                                            <h3 className="space-slider__title">Арабская ночь</h3>
                                             <div className="space-slider__text">
                                                 <p>
                                                     Восточная атмосфера данной локации располагает к спокойному
@@ -451,7 +451,7 @@ export default function Home() {
                                             →
                                         </div>
                                         <div>
-                                            <h3 className="space-slider__title">Spaceship</h3>
+                                            <h3 className="space-slider__title">Космический корабль</h3>
                                             <img src="./img/digital-space/slide-5.png" alt="Spaceship"/>
                                         </div>
                                         <div className="space-slider__control space-slider__control--next">
@@ -460,7 +460,7 @@ export default function Home() {
                                     </div>
                                     <div className="space-slider__main">
                                         <div className="space-slider__content">
-                                            <h3 className="space-slider__title">Spaceship</h3>
+                                            <h3 className="space-slider__title">Космический корабль</h3>
                                             <div className="space-slider__text">
                                                 <p>
                                                     Космический корабль
