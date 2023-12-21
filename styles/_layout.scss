@@ -248,6 +248,12 @@
 .network__subtitle {
     margin-bottom: 1.2rem;
 }
+.network__img {
+    transform: translateY(-30%);
+    @media screen and (max-width: 552px) {
+        transform: translateY(0);
+    }
+}
 
 // Benefits
 .benefits__wrap {

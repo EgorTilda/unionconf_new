@@ -644,7 +644,6 @@ export default function Home() {
             </div>
 
           </footer>
-
         <FloatBtn />
       </div>
     </>
