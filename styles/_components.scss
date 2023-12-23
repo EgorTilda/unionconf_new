@@ -227,8 +227,9 @@
         flex: 1 0 45%;
         margin-right: 12px;
     }
-    @media screen and (max-width: 992px) {
-        margin-right: 12px;
+    @media screen and (max-width: 425px) {
+        flex: 0 0 220px;
+        min-width: 220px;
     }
 }
 .about-card.rotate {
@@ -243,7 +244,6 @@
 .about-card {
     width: 100%;
     min-height: 26rem;
-    // background-color: #4c4d99;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -259,6 +259,9 @@
     @media screen and (max-width: 440px) {
         min-height: 25rem;
     }
+    @media screen and (max-width: 425px) {
+        min-height: 28rem;
+    }
     &__back-content {
         width: 100%;
         position: absolute;
@@ -270,7 +273,7 @@
         font-weight: 400;
 
         @media screen and (max-width: 576px) {
-            font-size: 10px;
+            font-size: 14px;
         }
     }
     &__back-inner {
@@ -279,6 +282,9 @@
         justify-content: center;
         align-items: center;
         padding: 20px;
+        @media screen and (max-width: 576px) {
+            padding: 10px;
+        }
     }
     &__back-img {
         max-width: 60%;
@@ -289,18 +295,6 @@
     &__back-text {
         max-width: 85%;
     }
-    // &:hover {
-    //     transform: rotateY(180deg);
-    // }
-    // &:hover &__title {
-    //     z-index: -1;
-    // }
-    // &:hover &__back-content {
-    //     z-index: 6;
-    // }
-    // &:hover &:before {
-    //     transform: rotateY(-180deg);
-    // }
 
     &__inner {
         flex: 1 0 auto;
@@ -356,6 +350,9 @@
         @media screen and (max-width: 440px) {
             font-size: 2rem;
         }
+        @media screen and (max-width: 440px) {
+            max-width: 80%;
+        }
     }
 }
 
@@ -371,6 +368,14 @@
     }
     .about-card__item--4 {
         order: 3;
+    }
+}
+@media screen and (max-width: 425px) {
+    .about-card__item--3 {
+        order: 3;
+    }
+    .about-card__item--4 {
+        order: 4;
     }
 }
 
@@ -617,9 +622,15 @@
 }
 .space-slider__img .space-slider__title {
     display: none;
+    font-size: 20px;
     @media screen and (max-width: 768px) {
         display: block;
     }
+}
+.space-slider__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .space-slider__main {
     padding: 4rem;

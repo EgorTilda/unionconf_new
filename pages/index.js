@@ -140,30 +140,24 @@ export default function Home() {
                             Вместе с Unionconf это легко!
                         </h2>
                     </div>
-                    <div className="network__content-wrap">
-                        <div className="container">
-                            <div className="network__content">
-                                <div class="title-wrap">
-                                        <div class="title-decor">{`{`}</div>
-                                        <h2 class="network__title title title--decor">Умный <br/> Нетворкинг</h2>
-                                </div>
-                                <div class="network__text">
-                                        <h3 class="network__subtitle subtitle">Найти нужный <br/> контакт — легко
-                                        </h3>
-                                        <p class="network__p text">
-                                            Партнёры, клиенты и специалисты могут <br/>обмениваться контактами и решать
-                                            задачи <br/>бизнеса прямо на мероприятии
-                                        </p>
-                                    </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div className="network__img">
-                      <img src="./img/about-block/cover.png" alt="Нетворкинг" />
-                    </div>
                 </div>
             </section>
+
+            <div className="network__content">
+                                    <div class="title-wrap">
+                                            <div class="title-decor">{`{`}</div>
+                                            <h2 class="network__title title title--decor">Умный <br/> Нетворкинг</h2>
+                                    </div>
+                                    <div class="network__text">
+                                            <h3 class="network__subtitle subtitle">Найти нужный <br/> контакт — легко
+                                            </h3>
+                                            <p class="network__p text">
+                                                Партнёры, клиенты и специалисты могут <br/>обмениваться контактами и решать
+                                                задачи <br/>бизнеса прямо на мероприятии
+                                            </p>
+                                        </div>
+                                    
+            </div>
 
             <section className="benefits" id="benefits">
                 <div className="benefits__path">
@@ -305,7 +299,7 @@ export default function Home() {
                                         <div className="space-slider__control space-slider__control--prev">
                                             →
                                         </div>
-                                        <div>
+                                        <div className="space-slider__wrap">
                                             <h3 className="space-slider__title">Выставочная зона</h3>
                                             <img src="./img/digital-space/slide-1.png" alt="Conference Hall"/>
                                         </div>
@@ -342,8 +336,8 @@ export default function Home() {
                                             <div className="space-slider__control space-slider__control--prev">
                                                 →
                                             </div>
-                                            <div>
-                                                <h3 className="space-slider__title"> Конференц - зал</h3>
+                                            <div className="space-slider__wrap">
+                                                <h3 className="space-slider__title">Конференц - зал</h3>
                                                 <img src="./img/digital-space/slide-2.png" alt="Meet Up"/>
                                             </div>
                                             <div className="space-slider__control space-slider__control--next">
@@ -378,8 +372,8 @@ export default function Home() {
                                         <div className="space-slider__control space-slider__control--prev">
                                             →
                                         </div>
-                                        <div>
-                                            <h3 className="space-slider__title">Японская гостиная</h3>
+                                        <div className="space-slider__wrap">
+                                            <h3 className="space-slider__title">Японский лаундж</h3>
                                             <img src="./img/digital-space/slide-3.png" alt="Japan Lounge"/>
                                         </div>
                                         <div className="space-slider__control space-slider__control--next">
@@ -388,7 +382,7 @@ export default function Home() {
                                     </div>
                                     <div className="space-slider__main">
                                         <div className="space-slider__content">
-                                            <h3 className="space-slider__title">Японская гостиная</h3>
+                                            <h3 className="space-slider__title">Японский лаундж</h3>
                                             <div className="space-slider__text">
                                                 <p>
                                                     Локация в спокойном японском стиле, которая подойдет для проведения
@@ -413,7 +407,7 @@ export default function Home() {
                                         <div className="space-slider__control space-slider__control--prev">
                                             →
                                         </div>
-                                        <div>
+                                        <div className="space-slider__wrap">
                                             <h3 className="space-slider__title">Арабская ночь</h3>
                                             <img src="./img/digital-space/slide-4.png" alt="Arabian Night"/>
                                         </div>
@@ -450,7 +444,7 @@ export default function Home() {
                                         <div className="space-slider__control space-slider__control--prev">
                                             →
                                         </div>
-                                        <div>
+                                        <div className="space-slider__wrap">
                                             <h3 className="space-slider__title">Космический корабль</h3>
                                             <img src="./img/digital-space/slide-5.png" alt="Spaceship"/>
                                         </div>
@@ -467,6 +461,74 @@ export default function Home() {
                                                     в футуристичном стиле, на котором можно провести презентацию
                                                     продукта, организовать переговоры с партнёрами по бизнесу
                                                     и поучаствовать в увлекательных игровых интерактивах с коллегами.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a href="#" className="btn-link">
+                                            <span className="btn-link__text">Перейти к локациям</span>
+                                            <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
+                                                alt="Перейти"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className="swiper-slide">
+                                <div className="space-slider__slide">
+                                    <div className="space-slider__img">
+                                        <div className="space-slider__control space-slider__control--prev">
+                                            →
+                                        </div>
+                                        <div className="space-slider__wrap">
+                                            <h3 className="space-slider__title">Рос Агро Экспо</h3>
+                                            <img src="./img/digital-space/slide-6.png" alt="Spaceship"/>
+                                        </div>
+                                        <div className="space-slider__control space-slider__control--next">
+                                            →
+                                        </div>
+                                    </div>
+                                    <div className="space-slider__main">
+                                        <div className="space-slider__content">
+                                            <h3 className="space-slider__title">Рос Агро Экспо</h3>
+                                            <div className="space-slider__text">
+                                                <p>
+                                                    Локация выставочного типа, в которой любая компания сможет представить свой продукт в выгодном свете благодаря спектру самых современных решений, знаний и уникальных возможностей.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a href="#" className="btn-link">
+                                            <span className="btn-link__text">Перейти к локациям</span>
+                                            <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
+                                                alt="Перейти"/>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <div className="swiper-slide">
+                                <div className="space-slider__slide">
+                                    <div className="space-slider__img">
+                                        <div className="space-slider__control space-slider__control--prev">
+                                            →
+                                        </div>
+                                        <div className="space-slider__wrap">
+                                            <h3 className="space-slider__title">РосПрод</h3>
+                                            <img src="./img/digital-space/slide-7.png" alt="Spaceship"/>
+                                        </div>
+                                        <div className="space-slider__control space-slider__control--next">
+                                            →
+                                        </div>
+                                    </div>
+                                    <div className="space-slider__main">
+                                        <div className="space-slider__content">
+                                            <h3 className="space-slider__title">РосПрод</h3>
+                                            <div className="space-slider__text">
+                                                <p>
+                                                Реалистичный дизайн локации подойдет для точного воспроизведения ваших промышленных процессов. Отличная возможность подробно продемонстрировать партнерам и инвесторам бизнес изнутри.
                                                 </p>
                                             </div>
                                         </div>
