@@ -250,6 +250,9 @@
     @media screen and (max-width: 576px) {
         margin-bottom: 5%;
     }
+    @media screen and (max-width: 522px) {
+        min-height: auto;
+    }
 }
 .network__main-title {
     text-align: center;
@@ -302,11 +305,11 @@
     bottom: 0;
     right: 0;
     z-index: 1;
-    @media screen and (max-width: 576px) {
-        top: 55%;
+    @media screen and (max-width: 522px) {
+        margin-top: 20px;
+        position: static;
     }
     @media screen and (max-width: 400px) {
-        top: 70%;
         min-width: 100%;
     }
 }
