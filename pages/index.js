@@ -648,13 +648,13 @@ export default function Home() {
             <div className="container footer__social-wrap">
                 <div className="footer__social">
                     <div className="footer__social-item">
-                        <a href="#" className="footer__social-link">Youtube</a>
+                        <a href="https://www.youtube.com" className="footer__social-link">Youtube</a>
                     </div>
                     <div className="footer__social-item">
-                        <a href="#" className="footer__social-link">Telegram</a>
+                        <a href="https://t.me/unionconf" className="footer__social-link">Telegram</a>
                     </div>
                     <div className="footer__social-item">
-                        <a href="#" className="footer__social-link">Вконтакте</a>
+                        <a href="https://vk.com/unionconfofficial" className="footer__social-link">Вконтакте</a>
                     </div>
                 </div>
             </div>
@@ -666,19 +666,19 @@ export default function Home() {
                     </a>
                     <div className="footer__uc-wrap">
                         <div className="footer__uc-item">
-                            <a href="#main" className="footer__uc-link">UNIONCONF</a>
+                            <a href="https://t.me/unionconf" className="footer__uc-link">UNIONCONF</a>
                             <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
                         </div>
                         <div className="footer__uc-item">
-                            <a href="#main" className="footer__uc-link">UNIONCONF</a>
+                            <a href="https://t.me/unionconf" className="footer__uc-link">UNIONCONF</a>
                             <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
                         </div>
                         <div className="footer__uc-item">
-                            <a href="#main" className="footer__uc-link">UNIONCONF</a>
+                            <a href="https://t.me/unionconf" className="footer__uc-link">UNIONCONF</a>
                             <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
                         </div>
                         <div className="footer__uc-item">
-                            <a href="#main" className="footer__uc-link">UNIONCONF</a>
+                            <a href="https://t.me/unionconf" className="footer__uc-link">UNIONCONF</a>
                             <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
                         </div>
                     </div>
@@ -690,8 +690,8 @@ export default function Home() {
                     <div className="footer__contacts-inner">
                         <div className="footer__links">
                             <div className="footer__links-title">Контакты:</div>
-                            <a href="mailto:Unionconf@mail.com" className="email">info@unionconf.com</a>
-                            <a href="mailto:Unionconf@mail.com" className="email">pr@unionconf.com</a>
+                            <a href="mailto:info@unionconf.com" className="email">info@unionconf.com</a>
+                            <a href="mailto:pr@unionconf.com" className="email">pr@unionconf.com</a>
                             <a href="tel:+79859078489" className="phone">+7 (985) 907-84-89</a>
                         </div>
                         <div className="copyright">
@@ -702,7 +702,7 @@ export default function Home() {
                         <div className="footer__links--h">
                             <div className="footer__links-title">Контакты:</div>
                             <a href="mailto:Unionconf@mail.com" className="email">Unionconf@mail.com</a>
-                            <a href="tel:+79859078489" className="phone">+7 (985) 907-84-89</a>
+                            <a href="tel:+79801684819" className="phone">+7 (980) 168-48-19</a>
                         </div>
                     </div>
                 </div>
