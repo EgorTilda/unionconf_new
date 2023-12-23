@@ -58,17 +58,22 @@
 .page-top {
    
 }
+.main {
+    background-color: $white;
+}
 .intro {
     background-image: url('./../public/img/header/back.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
+    height: 140vh;
     min-height: 140vh;
     padding-bottom: 50px;
 
     @media screen and (max-width: 992px) {
         background-size: cover;
-        min-height: 320px;
+        min-height: 520px;
+        height: auto;
     }
     @media screen and (max-width: 576px) {
         background-image: url('./../public/img/header/back-mobile.jpg');
@@ -76,39 +81,55 @@
         min-height: 320px;
     }
 }
+.intro__container {
+    height: 100%;
+}
 .intro__content {
+    height: 100%;
+    padding-top: 10vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    padding-top: 80px;
+    padding-bottom: 100px;
     @media screen and (max-width: 992px) {
-        padding-top: 50px;
+        padding-top: 5vh;
+        padding-bottom: 10px;
     }
-    @media screen and (max-width: 576px) {
-        padding-top: 25px;
+    @media screen and (max-width: 768px) {
+        padding-top: 2vh;
+        padding-bottom: 10px;
+    }
+     @media screen and (max-width: 576px) {
+        padding-top: 5px;
+        padding-bottom: 10px;
     }
 }
 .intro__text-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 25%;
-    @media screen and (max-width: 576px) {
-        margin-bottom: 40%;
+    @media screen and (max-width: 992px) {
+        padding-bottom: 100px;
     }
 }
 
 .intro__img {
-    max-width: 360px;
+    max-width: 300px;
+    padding-top: 20px;
     @media screen and (max-width: 992px) {
         max-width: 200px;
     }
     @media screen and (max-width: 576px) {
-        max-width: 100px;
+        padding-top: 0;
+    }
+    @media screen and (max-width: 576px) {
+        max-width: 140px;
     }
 }
+
+
+
 
 .intro__title {
     color: $primary;
@@ -218,6 +239,18 @@
 }
 
 // Network
+.network {
+    background-color: $white;
+    position: relative;
+    min-height: 100vh;
+    margin-bottom: 30%;
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20%;
+    }
+    @media screen and (max-width: 576px) {
+        margin-bottom: 5%;
+    }
+}
 .network__main-title {
     text-align: center;
     font-size: 4.75rem;
@@ -226,17 +259,14 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-bottom: 14rem;
+    padding-bottom: 14rem;
     @media screen and (max-width: 768px) {
         font-size: 24px;
     }
     @media screen and (max-width: 576px) {
         font-size: 20px;
-        margin-bottom: 50px;
+        padding-bottom: 50px;
     }
-}
-.network {
-    background-color: $white;
 }
 
 .network__title {
@@ -257,23 +287,31 @@
     }
 }
 
-.network__main {
-    display: flex;
-    background-image: url('./../public/img/networking/Unionconf_back.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position-y: center;
-}
 .network__content {
-    flex: 0 0 10%;
-    background-color: rgb(17, 17, 17, .5);
+    
+}
+.network__container {
+    position: relative;
+    z-index: 4;
 }
 .network__img {
-    background-color: rgb(255, 127, 80, .5);
-    padding-top: 8rem;
-    flex: 0 1 90%;
-    width: 90vw;
+    top: 65%;
+    max-width: 100%;
+    min-width: 460px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    @media screen and (max-width: 576px) {
+        top: 55%;
+    }
+    @media screen and (max-width: 400px) {
+        top: 70%;
+        min-width: 100%;
+    }
 }
+
+
 
 // Benefits
 .benefits__wrap {

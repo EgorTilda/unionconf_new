@@ -1,0 +1,14 @@
+ <section className="intro">
+                <div className="intro__content">
+                    <div className="intro__text-content">
+                        <img className="intro__img" src="./img/header/avatars.png" />
+                        <h1 className="intro__title">Весь мир онлайн</h1>
+                        <div className="intro__subtitle">
+                            <p>
+                                на вашем событии в Unionconf
+                            </p>
+                        </div>
+                    </div>
+                    <a className="intro__btn-cta btn-cta">Попробовать</a>
+                </div>
+            </section>
