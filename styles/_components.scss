@@ -29,9 +29,6 @@
         &:not(:last-child) {
             padding-right: 0.8rem;
         }
-        &:first-child {
-            padding-right: 2.4rem;
-        }
         &--active {
             color: $secondary;
         }
@@ -858,7 +855,7 @@
 // Menu
 .menu-btn {
     visibility: hidden;
-    width: 188px;
+    width: 212px;
 }
 
 .menu.active {

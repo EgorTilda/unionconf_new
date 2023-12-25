@@ -48,7 +48,7 @@ export default function Home() {
                             <h1 className="intro__title">Весь мир онлайн</h1>
                             <div className="intro__subtitle">
                                 <p>
-                                    на вашем событии в Unionconf
+                                    на вашем событии в ЮНИОНКОНФ
                                 </p>
                             </div>
                         </div>
@@ -82,7 +82,7 @@ export default function Home() {
             
             <div className="about__main">
                 <div className="container about__container">
-                    <h3 className="about__title title">Unionconf – платформа для проведения мероприятий в виртуальной
+                    <h3 className="about__title title">ЮНИОНКОНФ – платформа для проведения мероприятий в виртуальной
                         реальности
                     </h3>
 
@@ -93,7 +93,7 @@ export default function Home() {
                             srcIcon="Location-icon.png" />
                         </div>
                         <div className="about-card-wrapper">
-                            <AboutCard title="Нетворк&CRM" 
+                            <AboutCard title="Нетворк и CRM" 
                                 text="Удобный функционал для коммуникации с клиентами и партнёрами во время мероприятия"
                                 isGray
                                 srcIcon="Scale-icon.png" />
@@ -142,7 +142,7 @@ export default function Home() {
                 <div className="network__inner">
                     <h2 ref={ref} className= {isVisibleText ? 'network__main-title text-anim active' : 'network__main-title text-anim'}>
                         Хотите создать виртуальное событие? 
-                        Вместе с Unionconf это легко!
+                        Вместе с ЮНИКОНФ это легко!
                     </h2>
                     <div className="network__content">
                         <div class="title-wrap">
@@ -269,7 +269,7 @@ export default function Home() {
             </div>
             <div className="spaces__container container">
                 <div className="spaces__text-content">
-                    <h2 className="spaces__title">Цифровые пространства Unionconf</h2>
+                    <h2 className="spaces__title">Цифровые пространства ЮНИОНКОНФ</h2>
                     <div className="spaces__text">
                         <p>
                             Виртуальные локации для приватных встреч, переговоров и презентаций
@@ -370,6 +370,74 @@ export default function Home() {
                     </SwiperSlide>
 
                     <SwiperSlide>
+                        <div className="swiper-slide">
+                            <div className="space-slider__slide">
+                                <div className="space-slider__img">
+                                    <div className="space-slider__control space-slider__control--prev">
+                                        →
+                                    </div>
+                                    <div className="space-slider__wrap">
+                                        <h3 className="space-slider__title">Рос Агро Экспо</h3>
+                                        <img src="./img/digital-space/slide-6.png" alt="Spaceship"/>
+                                    </div>
+                                    <div className="space-slider__control space-slider__control--next">
+                                        →
+                                    </div>
+                                </div>
+                                <div className="space-slider__main">
+                                    <div className="space-slider__content">
+                                        <h3 className="space-slider__title">Рос Агро Экспо</h3>
+                                        <div className="space-slider__text">
+                                            <p>
+                                                Локация выставочного типа, в которой любая компания сможет представить свой продукт в выгодном свете благодаря спектру самых современных решений, знаний и уникальных возможностей.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <a href="#" className="btn-link">
+                                        <span className="btn-link__text">Перейти к локациям</span>
+                                        <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
+                                            alt="Перейти"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <div className="swiper-slide">
+                            <div className="space-slider__slide">
+                                <div className="space-slider__img">
+                                    <div className="space-slider__control space-slider__control--prev">
+                                        →
+                                    </div>
+                                    <div className="space-slider__wrap">
+                                        <h3 className="space-slider__title">РосПрод</h3>
+                                        <img src="./img/digital-space/slide-7.png" alt="Spaceship"/>
+                                    </div>
+                                    <div className="space-slider__control space-slider__control--next">
+                                        →
+                                    </div>
+                                </div>
+                                <div className="space-slider__main">
+                                    <div className="space-slider__content">
+                                        <h3 className="space-slider__title">РосПрод</h3>
+                                        <div className="space-slider__text">
+                                            <p>
+                                            Реалистичный дизайн локации подойдет для точного воспроизведения ваших промышленных процессов. Отличная возможность подробно продемонстрировать партнерам и инвесторам бизнес изнутри.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <a href="#" className="btn-link">
+                                        <span className="btn-link__text">Перейти к локациям</span>
+                                        <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
+                                            alt="Перейти"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
                     <div className="swiper-slide">
                             <div className="space-slider__slide">
                                 <div className="space-slider__img">
@@ -465,74 +533,6 @@ export default function Home() {
                                                 в футуристичном стиле, на котором можно провести презентацию
                                                 продукта, организовать переговоры с партнёрами по бизнесу
                                                 и поучаствовать в увлекательных игровых интерактивах с коллегами.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <a href="#" className="btn-link">
-                                        <span className="btn-link__text">Перейти к локациям</span>
-                                        <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
-                                            alt="Перейти"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <div className="swiper-slide">
-                            <div className="space-slider__slide">
-                                <div className="space-slider__img">
-                                    <div className="space-slider__control space-slider__control--prev">
-                                        →
-                                    </div>
-                                    <div className="space-slider__wrap">
-                                        <h3 className="space-slider__title">Рос Агро Экспо</h3>
-                                        <img src="./img/digital-space/slide-6.png" alt="Spaceship"/>
-                                    </div>
-                                    <div className="space-slider__control space-slider__control--next">
-                                        →
-                                    </div>
-                                </div>
-                                <div className="space-slider__main">
-                                    <div className="space-slider__content">
-                                        <h3 className="space-slider__title">Рос Агро Экспо</h3>
-                                        <div className="space-slider__text">
-                                            <p>
-                                                Локация выставочного типа, в которой любая компания сможет представить свой продукт в выгодном свете благодаря спектру самых современных решений, знаний и уникальных возможностей.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <a href="#" className="btn-link">
-                                        <span className="btn-link__text">Перейти к локациям</span>
-                                        <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
-                                            alt="Перейти"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <div className="swiper-slide">
-                            <div className="space-slider__slide">
-                                <div className="space-slider__img">
-                                    <div className="space-slider__control space-slider__control--prev">
-                                        →
-                                    </div>
-                                    <div className="space-slider__wrap">
-                                        <h3 className="space-slider__title">РосПрод</h3>
-                                        <img src="./img/digital-space/slide-7.png" alt="Spaceship"/>
-                                    </div>
-                                    <div className="space-slider__control space-slider__control--next">
-                                        →
-                                    </div>
-                                </div>
-                                <div className="space-slider__main">
-                                    <div className="space-slider__content">
-                                        <h3 className="space-slider__title">РосПрод</h3>
-                                        <div className="space-slider__text">
-                                            <p>
-                                            Реалистичный дизайн локации подойдет для точного воспроизведения ваших промышленных процессов. Отличная возможность подробно продемонстрировать партнерам и инвесторам бизнес изнутри.
                                             </p>
                                         </div>
                                     </div>
@@ -648,9 +648,6 @@ export default function Home() {
             <div className="container footer__social-wrap">
                 <div className="footer__social">
                     <div className="footer__social-item">
-                        <a href="https://www.youtube.com" className="footer__social-link">Youtube</a>
-                    </div>
-                    <div className="footer__social-item">
                         <a href="https://t.me/unionconf" className="footer__social-link">Telegram</a>
                     </div>
                     <div className="footer__social-item">
@@ -661,24 +658,24 @@ export default function Home() {
             <div className="footer__uc">
                 <div className="container">
                     <a className="footer__uc-link-btn">
-                        UNIONCONF
+                        ЮНИОНКОНФ
                         <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
                     </a>
                     <div className="footer__uc-wrap">
                         <div className="footer__uc-item">
-                            <a href="https://t.me/unionconf" className="footer__uc-link">UNIONCONF</a>
+                            <a href="https://t.me/unionconf" className="footer__uc-link">ЮНИОНКОНФ</a>
                             <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
                         </div>
                         <div className="footer__uc-item">
-                            <a href="https://t.me/unionconf" className="footer__uc-link">UNIONCONF</a>
+                            <a href="https://t.me/unionconf" className="footer__uc-link">ЮНИОНКОНФ</a>
                             <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
                         </div>
                         <div className="footer__uc-item">
-                            <a href="https://t.me/unionconf" className="footer__uc-link">UNIONCONF</a>
+                            <a href="https://t.me/unionconf" className="footer__uc-link">ЮНИОНКОНФ</a>
                             <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
                         </div>
                         <div className="footer__uc-item">
-                            <a href="https://t.me/unionconf" className="footer__uc-link">UNIONCONF</a>
+                            <a href="https://t.me/unionconf" className="footer__uc-link">ЮНИОНКОНФ</a>
                             <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
                         </div>
                     </div>
@@ -692,12 +689,12 @@ export default function Home() {
                             <div className="footer__links-title">Контакты:</div>
                             <a href="mailto:info@unionconf.com" className="email">info@unionconf.com</a>
                             <a href="mailto:pr@unionconf.com" className="email">pr@unionconf.com</a>
-                            <a href="tel:+79859078489" className="phone">+7 (985) 907-84-89</a>
+                            <a href="tel:+79801684819" className="phone">+7 (980) 168-48-19</a>
                         </div>
                         <div className="copyright">
                             <img src="./img/logo-abb.svg" alt="UC Лого" />
                             <span>ООО "ЮНИОНКОНФ" ИНН 9731120123</span>
-                            <span>Unionconf, 2023. Все права защищены.</span>
+                            <span>ЮНИОНКОНФ, 2023. Все права защищены.</span>
                         </div>
                         <div className="footer__links--h">
                             <div className="footer__links-title">Контакты:</div>
