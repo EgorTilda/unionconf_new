@@ -260,11 +260,11 @@ export default function Home() {
 
         <section className="spaces" id="spaces">
             <div className="spaces__path">
-                <svg width="1920" height="323" viewBox="0 0 1920 323" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1214.7 137.375C1179.23 137.375 1150.38 166.237 1150.38 201.71C1150.38 235.855 1207.03 313.997 1209.52 317.375H1213.52C1213.79 317.746 1215.41 317.375 1215.87 317.375C1216.33 317.375 1218.07 316.416 1218.35 316.045L1219.52 317.68C1222 314.301 1279.04 235.855 1279.04 201.71C1279.04 166.237 1250.18 137.375 1214.7 137.375ZM1214.7 178.665C1227.41 178.665 1237.75 189.001 1237.75 201.71C1237.75 214.413 1227.41 224.755 1214.7 224.755C1202 224.755 1191.66 214.413 1191.66 201.71C1191.66 189.001 1202 178.665 1214.7 178.665Z" fill="#F9F9F9"/>
-                    <path d="M1194.02 316.238H1235.36" stroke="#8CB0FA" stroke-width="3" stroke-linecap="round"/>
-                    <circle cx="1214.52" cy="201.875" r="23.5" fill="#DCF36E"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V291.975C0 236.746 44.7734 191.975 100 191.975H952.812C1001.48 191.975 1048.38 173.686 1084.2 140.734C1156.54 74.1953 1267.2 72.2344 1341.85 136.17L1349.37 142.615C1386.56 174.469 1433.91 191.975 1482.88 191.975H1842C1885.08 191.975 1920 226.896 1920 269.975V0H0Z" fill="#FDFDFD"/>
+                <svg width="1920" height="311" viewBox="0 0 1920 311" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1419.95 126.107C1384.48 126.107 1355.62 154.894 1355.62 190.273C1355.62 224.329 1412.28 302.266 1414.77 305.635H1418.77C1419.04 306.005 1420.66 305.635 1421.12 305.635C1421.58 305.635 1423.32 304.678 1423.6 304.308L1424.77 305.939C1427.25 302.569 1484.29 224.329 1484.29 190.273C1484.29 154.894 1455.43 126.107 1419.95 126.107ZM1419.95 167.289C1432.66 167.289 1443 177.598 1443 190.273C1443 202.943 1432.66 213.258 1419.95 213.258C1407.25 213.258 1396.91 202.943 1396.91 190.273C1396.91 177.598 1407.25 167.289 1419.95 167.289Z" fill="#F9F9F9"/>
+                    <path d="M1399.27 304.5H1440.61" stroke="#8CB0FA" stroke-width="3" stroke-linecap="round"/>
+                    <ellipse cx="1419.77" cy="190.438" rx="23.5" ry="23.4383" fill="#DCF36E"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V272.56C0 217.331 44.7715 172.56 100 172.56H1165.82C1212.63 172.56 1257.82 155.36 1292.78 124.23C1363.33 61.4202 1469.2 59.6344 1541.83 120.03L1548.95 125.946C1585.17 156.068 1630.79 172.56 1677.9 172.56H1845.5C1886.65 172.56 1920 205.915 1920 247.06V0H0Z" fill="#FDFDFD"/>
                 </svg>
             </div>
             <div className="spaces__container container">
@@ -438,15 +438,15 @@ export default function Home() {
                     </SwiperSlide>
 
                     <SwiperSlide>
-                    <div className="swiper-slide">
+                        <div className="swiper-slide">
                             <div className="space-slider__slide">
                                 <div className="space-slider__img">
                                     <div className="space-slider__control space-slider__control--prev">
                                         →
                                     </div>
                                     <div className="space-slider__wrap">
-                                        <h3 className="space-slider__title">Японский лаундж</h3>
-                                        <img src="./img/digital-space/slide-3.png" alt="Japan Lounge"/>
+                                        <h3 className="space-slider__title">Космический корабль</h3>
+                                        <img src="./img/digital-space/slide-5.png" alt="Spaceship"/>
                                     </div>
                                     <div className="space-slider__control space-slider__control--next">
                                         →
@@ -454,18 +454,20 @@ export default function Home() {
                                 </div>
                                 <div className="space-slider__main">
                                     <div className="space-slider__content">
-                                        <h3 className="space-slider__title">Японский лаундж</h3>
+                                        <h3 className="space-slider__title">Космический корабль</h3>
                                         <div className="space-slider__text">
                                             <p>
-                                                Локация в спокойном японском стиле, которая подойдет для проведения
-                                                совещаний, переговоров или организации встреч с командой.
+                                                Космический корабль
+                                                в футуристичном стиле, на котором можно провести презентацию
+                                                продукта, организовать переговоры с партнёрами по бизнесу
+                                                и поучаствовать в увлекательных игровых интерактивах с коллегами.
                                             </p>
                                         </div>
                                     </div>
                                     <a href="#" className="btn-link">
                                         <span className="btn-link__text">Перейти к локациям</span>
                                         <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
-                                            alt="Перейти" />
+                                            alt="Перейти"/>
                                     </a>
                                 </div>
                             </div>
@@ -496,43 +498,6 @@ export default function Home() {
                                                 и непринуждённому разговору, подойдёт для приватного общения
                                                 с коллегами или партнёрами
                                                 в неформальной обстановке
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <a href="#" className="btn-link">
-                                        <span className="btn-link__text">Перейти к локациям</span>
-                                        <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
-                                            alt="Перейти"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <div className="swiper-slide">
-                            <div className="space-slider__slide">
-                                <div className="space-slider__img">
-                                    <div className="space-slider__control space-slider__control--prev">
-                                        →
-                                    </div>
-                                    <div className="space-slider__wrap">
-                                        <h3 className="space-slider__title">Космический корабль</h3>
-                                        <img src="./img/digital-space/slide-5.png" alt="Spaceship"/>
-                                    </div>
-                                    <div className="space-slider__control space-slider__control--next">
-                                        →
-                                    </div>
-                                </div>
-                                <div className="space-slider__main">
-                                    <div className="space-slider__content">
-                                        <h3 className="space-slider__title">Космический корабль</h3>
-                                        <div className="space-slider__text">
-                                            <p>
-                                                Космический корабль
-                                                в футуристичном стиле, на котором можно провести презентацию
-                                                продукта, организовать переговоры с партнёрами по бизнесу
-                                                и поучаствовать в увлекательных игровых интерактивах с коллегами.
                                             </p>
                                         </div>
                                     </div>
