@@ -309,7 +309,7 @@ export default function Home() {
                                     </div>
                                     <div className="space-slider__wrap">
                                         <h3 className="space-slider__title">Выставочная зона</h3>
-                                        <img src="./img/digital-space/slide-1.png" alt="Conference Hall"/>
+                                        <img src="./img/digital-space/slide-1.png" alt="Выстовочная зона"/>
                                     </div>
                                     <div className="space-slider__control space-slider__control--next">
                                         →
@@ -346,7 +346,7 @@ export default function Home() {
                                         </div>
                                         <div className="space-slider__wrap">
                                             <h3 className="space-slider__title">Конференц - зал</h3>
-                                            <img src="./img/digital-space/slide-2.png" alt="Meet Up"/>
+                                            <img src="./img/digital-space/slide-2.png" alt="Конференц-зал"/>
                                         </div>
                                         <div className="space-slider__control space-slider__control--next">
                                             →
@@ -381,42 +381,8 @@ export default function Home() {
                                         →
                                     </div>
                                     <div className="space-slider__wrap">
-                                        <h3 className="space-slider__title">Рос Агро Экспо</h3>
-                                        <img src="./img/digital-space/slide-6.png" alt="Spaceship"/>
-                                    </div>
-                                    <div className="space-slider__control space-slider__control--next">
-                                        →
-                                    </div>
-                                </div>
-                                <div className="space-slider__main">
-                                    <div className="space-slider__content">
-                                        <h3 className="space-slider__title">Рос Агро Экспо</h3>
-                                        <div className="space-slider__text">
-                                            <p>
-                                                Локация выставочного типа, в которой любая компания сможет представить свой продукт в выгодном свете благодаря спектру самых современных решений, знаний и уникальных возможностей.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <a href="#" className="btn-link">
-                                        <span className="btn-link__text">Перейти к локациям</span>
-                                        <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
-                                            alt="Перейти"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <div className="swiper-slide">
-                            <div className="space-slider__slide">
-                                <div className="space-slider__img">
-                                    <div className="space-slider__control space-slider__control--prev">
-                                        →
-                                    </div>
-                                    <div className="space-slider__wrap">
                                         <h3 className="space-slider__title">РосПрод</h3>
-                                        <img src="./img/digital-space/slide-7.png" alt="Spaceship"/>
+                                        <img src="./img/digital-space/slide-7.png" alt="РосПрод"/>
                                     </div>
                                     <div className="space-slider__control space-slider__control--next">
                                         →
@@ -449,8 +415,42 @@ export default function Home() {
                                         →
                                     </div>
                                     <div className="space-slider__wrap">
+                                        <h3 className="space-slider__title">Рос Агро Экспо</h3>
+                                        <img src="./img/digital-space/slide-6.png" alt="Рос Агро Экспо"/>
+                                    </div>
+                                    <div className="space-slider__control space-slider__control--next">
+                                        →
+                                    </div>
+                                </div>
+                                <div className="space-slider__main">
+                                    <div className="space-slider__content">
+                                        <h3 className="space-slider__title">Рос Агро Экспо</h3>
+                                        <div className="space-slider__text">
+                                            <p>
+                                                Локация выставочного типа, в которой любая компания сможет представить свой продукт в выгодном свете благодаря спектру самых современных решений, знаний и уникальных возможностей.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <a href="#" className="btn-link">
+                                        <span className="btn-link__text">Перейти к локациям</span>
+                                        <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
+                                            alt="Перейти"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <div className="swiper-slide">
+                            <div className="space-slider__slide">
+                                <div className="space-slider__img">
+                                    <div className="space-slider__control space-slider__control--prev">
+                                        →
+                                    </div>
+                                    <div className="space-slider__wrap">
                                         <h3 className="space-slider__title">Космический корабль</h3>
-                                        <img src="./img/digital-space/slide-5.png" alt="Spaceship"/>
+                                        <img src="./img/digital-space/slide-5.png" alt="Космический корабль"/>
                                     </div>
                                     <div className="space-slider__control space-slider__control--next">
                                         →
@@ -487,7 +487,7 @@ export default function Home() {
                                     </div>
                                     <div className="space-slider__wrap">
                                         <h3 className="space-slider__title">Арабская ночь</h3>
-                                        <img src="./img/digital-space/slide-4.png" alt="Arabian Night"/>
+                                        <img src="./img/digital-space/slide-4.png" alt="Арабская ночь"/>
                                     </div>
                                     <div className="space-slider__control space-slider__control--next">
                                         →
@@ -502,6 +502,41 @@ export default function Home() {
                                                 и непринуждённому разговору, подойдёт для приватного общения
                                                 с коллегами или партнёрами
                                                 в неформальной обстановке
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <a href="#" className="btn-link">
+                                        <span className="btn-link__text">Перейти к локациям</span>
+                                        <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
+                                            alt="Перейти"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+
+                    <SwiperSlide>
+                        <div className="swiper-slide">
+                            <div className="space-slider__slide">
+                                <div className="space-slider__img">
+                                    <div className="space-slider__control space-slider__control--prev">
+                                        →
+                                    </div>
+                                    <div className="space-slider__wrap">
+                                        <h3 className="space-slider__title">Японский лаундж</h3>
+                                        <img src="./img/digital-space/slide-3.png" alt="Японский лаундж"/>
+                                    </div>
+                                    <div className="space-slider__control space-slider__control--next">
+                                        →
+                                    </div>
+                                </div>
+                                <div className="space-slider__main">
+                                    <div className="space-slider__content">
+                                        <h3 className="space-slider__title">Японский лаундж</h3>
+                                        <div className="space-slider__text">
+                                            <p>
+                                                Локация в спокойном японском стиле, которая подойдет для проведения совещаний, переговоров или организации встреч
+                                                с командой.
                                             </p>
                                         </div>
                                     </div>
