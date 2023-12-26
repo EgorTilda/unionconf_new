@@ -20,6 +20,14 @@ a, a:link, a:visited  {
 a:hover  {
     text-decoration: none;
 }
+a[x-apple-data-detectors] {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}s
 
 /* Common */
 

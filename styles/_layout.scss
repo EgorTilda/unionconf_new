@@ -761,6 +761,9 @@
     @media screen and (max-width: 768px) {
         background-color: transparent;
     }
+    @media screen and (max-width: 450px) {
+        padding: 2rem 0;
+    }
 }
 
 .footer__uc-wrap {
@@ -792,13 +795,17 @@
     @media screen and (min-width: 769px) {
         background: linear-gradient(180deg, rgba(239, 238, 254, 0.91) 9.91%, #b4bef5 100%);
     }
+    @media screen and (max-width: 450px) {
+        padding-top: 1rem;
+        padding-bottom: 5rem;
+    }
 }
 
 .copyright {
     span:not(:last-child) {
         margin: 15px 0;
     }
-    @media screen and (max-width: 576px){
+    @media screen and (max-width: 340px){
         padding-top: 32px;
         align-self: center;
     }
@@ -821,7 +828,10 @@
     justify-content: space-between;
     align-items: center;
     padding-bottom: 30px;
-    @media screen and (max-width: 576px){
+    @media screen and (max-width: 425px) {
+        align-items: flex-start;
+    }
+    @media screen and (max-width: 340px){
         flex-direction: column;
         align-items: flex-start;
     }
