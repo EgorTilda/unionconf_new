@@ -518,7 +518,24 @@
             max-width: 60%;
         }
         &__num {
+            font-size: 86px;
             transform: translate3d(-10%, 80%, 0);
+        }
+    }
+    @media screen and (max-width: 576px) {
+        min-height: 170px;
+        &__content {
+            flex-direction: column;
+            padding: 20px 12px;
+        }
+        &__desc {
+            padding-top: 17px;
+            font-size: 14px;
+            align-self: flex-end;
+            max-width: 60%;
+        }
+        &__num {
+            transform: translate3d(-10%, 90%, 0);
         }
     }
 }

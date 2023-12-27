@@ -111,7 +111,7 @@
     background-color: $white;
     position: relative;
     padding-top: 60px;
-    padding-bottom: 7rem;
+    padding-bottom: 6rem;
     @media screen and (max-width: 600px) {
         padding-top: 20px;
     }
@@ -181,18 +181,7 @@
 // Network
 .network {
     background-color: $white;
-    position: relative;
-    min-height: 100vh;
-    margin-bottom: 30%;
-    @media screen and (max-width: 768px) {
-        margin-bottom: 20%;
-    }
-    @media screen and (max-width: 576px) {
-        margin-bottom: 5%;
-    }
-    @media screen and (max-width: 522px) {
-        min-height: auto;
-    }
+    padding-bottom: 200px;
 }
 .network__main-title {
     text-align: center;
@@ -202,7 +191,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    padding-bottom: 14rem;
+    padding-bottom: 7rem;
     @media screen and (max-width: 768px) {
         font-size: 24px;
     }
@@ -211,7 +200,6 @@
         padding-bottom: 50px;
     }
 }
-
 .network__title {
     font-size: 7.5rem;
     font-weight: 800;
@@ -223,36 +211,77 @@
 .network__subtitle {
     margin-bottom: 1.2rem;
 }
-
 .network__p {
     @media screen and (max-width: 425px) {
         font-size: 16px;
     }
 }
 
-.network__content {
-    
-}
-.network__container {
+.network__bg-decor {
+    width: 100%;
+    background-color: red;
+    margin: 160px auto;
+    max-width: 1800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    z-index: 4;
+
+    @media screen and (max-width: 576px) {
+        margin-top: 120px;
+        margin-bottom: 120px;
+    }
+    @media screen and (max-width: 425px) {
+        margin-bottom: 100px;
+    }
 }
-.network__img {
-    top: 65%;
-    max-width: 100%;
-    min-width: 460px;
+.network__bg-wrap {
+    width: 100%;
     position: absolute;
-    bottom: 0;
-    right: 0;
     z-index: 1;
-    @media screen and (max-width: 522px) {
-        margin-top: 20px;
-        position: static;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 576px) {
+        justify-content: flex-start;
     }
-    @media screen and (max-width: 400px) {
-        min-width: 100%;
+
+    img {
+        max-width: 105%;
+        @media screen and (max-width: 576px) {
+            max-width: 200%;
+        }
     }
 }
+.network__bg-cover {
+    margin-right: 5%;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    max-width: 85%;
+    @media screen and (max-width: 576px) {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .network {
+        padding-bottom: 20vh;
+    }
+}
+@media screen and (max-width: 992px) {
+    .network {
+        padding-bottom: 60px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .network {
+        padding-bottom: 10px;
+    }
+}
+
 
 
 
@@ -284,6 +313,9 @@
     }
     svg {
         transform: translateY(-2%);
+    }
+    @media screen and (max-width: 576px) {
+        
     }
 }
 .logo-abb {
@@ -343,6 +375,10 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 8.7rem;
+
+    @media screen and (max-width: 576px) {
+        margin-bottom: 45px;
+    }
 }
 
 .benefits__title {
@@ -714,19 +750,20 @@
 }
 
 .footer__social-wrap {
-    border-bottom: 1px solid $white;
+    
 }
 
 .footer__social-item {
     font-size: 3rem;
     font-weight: 400;
     text-transform: uppercase;
-    margin-right: 10%;
+    text-align: center;
+    flex: 0 0 50%;
     @media screen and (max-width: 768px) {
         font-size: 20px;
     }
     @media screen and (max-width: 590px) {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 
@@ -750,6 +787,7 @@
 }
 
 .footer__uc {
+    border-top: 1px solid $white;
     background-color: $accent;
     padding: 4.2rem 0;
     transition: box-shadow 0.1s ease-in-out;
