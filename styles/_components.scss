@@ -881,7 +881,6 @@
 .menu {
     width: 62%;
     max-width: 200px;
-    min-height: 320px;
     background-color: #4e509e;
     position: absolute;
     top: 0;
@@ -890,6 +889,7 @@
     transition: .2s;
     padding: 27px;
     z-index: 500;
+    border-bottom-left-radius: 20px;
 
     &__inner {
         display: flex;
