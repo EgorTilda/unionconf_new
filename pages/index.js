@@ -623,10 +623,10 @@ export default function Home() {
             <div className="container footer__social-wrap">
                 <div className="footer__social">
                     <div className="footer__social-item">
-                        <a href="https://t.me/unionconf" className="footer__social-link">Telegram</a>
+                        <a href="https://t.me/unionconf" className="footer__social-link" target="_blank">Telegram</a>
                     </div>
                     <div className="footer__social-item">
-                        <a href="https://vk.com/unionconfofficial" className="footer__social-link">Вконтакте</a>
+                        <a href="https://vk.com/unionconfofficial" className="footer__social-link" target="_blank">Вконтакте</a>
                     </div>
                 </div>
             </div>
