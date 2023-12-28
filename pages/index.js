@@ -35,7 +35,7 @@ export default function Home() {
         <meta name="format-detection" content="telephone=no" />
         <meta name="format-detection" content="date=no" />
         <meta name="format-detection" content="address=no" />
-        <meta name="format-detection" content="email=no" ssss/>
+        <meta name="format-detection" content="email=no"/>
         <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png"/>
         <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png"/>
@@ -65,7 +65,7 @@ export default function Home() {
 
         <main className="main">
         <section className="about" id="about">
-            <h2 className="ticker-title">
+            <h2 className="ticker-title ticker-title--text">
                 <div className="ticker-title__inner">
                     <span className="ticker-title__item">
                         <span>Web3</span>
@@ -202,8 +202,8 @@ export default function Home() {
                                     <div className="benefits-card__title">Инфоповод</div>
                                     <div className="benefits-card__desc">
                                         <p>
-                                            Мероприятие станет отправной точкой пиара бренда и активными
-                                            упоминаниями в СМИ
+                                            Мероприятие станет отправной точкой пиара бренда и активных
+                                            упоминаний в СМИ
                                         </p>
                                     </div>
                                 </div>
@@ -241,7 +241,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
-            <h2 className="ticker-title">
+            <h2 className="ticker-title ticker-title--text">
                     <div className="ticker-title__inner">
                         <div className="ticker-title__inner">
                             <span className="ticker-title__item">
@@ -267,358 +267,327 @@ export default function Home() {
             </h2>
         </section>
 
-        <section className="spaces" id="spaces">
-            <div className="spaces__path">
-                <svg width="1920" height="311" viewBox="0 0 1920 311" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M1419.95 126.107C1384.48 126.107 1355.62 154.894 1355.62 190.273C1355.62 224.329 1412.28 302.266 1414.77 305.635H1418.77C1419.04 306.005 1420.66 305.635 1421.12 305.635C1421.58 305.635 1423.32 304.678 1423.6 304.308L1424.77 305.939C1427.25 302.569 1484.29 224.329 1484.29 190.273C1484.29 154.894 1455.43 126.107 1419.95 126.107ZM1419.95 167.289C1432.66 167.289 1443 177.598 1443 190.273C1443 202.943 1432.66 213.258 1419.95 213.258C1407.25 213.258 1396.91 202.943 1396.91 190.273C1396.91 177.598 1407.25 167.289 1419.95 167.289Z" fill="#F9F9F9"/>
-                    <path d="M1399.27 304.5H1440.61" stroke="#8CB0FA" stroke-width="3" stroke-linecap="round"/>
-                    <ellipse cx="1419.77" cy="190.438" rx="23.5" ry="23.4383" fill="#DCF36E"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V272.56C0 217.331 44.7715 172.56 100 172.56H1165.82C1212.63 172.56 1257.82 155.36 1292.78 124.23C1363.33 61.4202 1469.2 59.6344 1541.83 120.03L1548.95 125.946C1585.17 156.068 1630.79 172.56 1677.9 172.56H1845.5C1886.65 172.56 1920 205.915 1920 247.06V0H0Z" fill="#FDFDFD"/>
-                </svg>
-            </div>
-            <div className="spaces__container container">
-                <div className="spaces__text-content">
-                    <h2 className="spaces__title">Цифровые пространства ЮНИОНКОНФ</h2>
-                    <div className="spaces__text">
-                        <p>
-                            Виртуальные локации для приватных встреч, переговоров и презентаций
-                        </p>
-                    </div>
-                </div>
-                    <Swiper
-                    loop={true}  
-                    navigation={{
-                        nextEl: '.space-slider__control--next',
-                        prevEl: '.space-slider__control--prev'
-                    }} 
-                    modules={[Navigation]}
-                    className="space-slider swiper"
-                    >
-                    <div className="space-slider__controls">
-                        <div className="space-slider__controls-inner">
-                            <div className="space-slider__control space-slider__control--mobile space-slider__control--prev">
-                                                →
-                            </div>
-                            <div className="space-slider__control space-slider__control--mobile space-slider__control--next">
-                                                →
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <SwiperSlide>
-                        <div className="swiper-slide">
-                            <div className="space-slider__slide">
-                                <div className="space-slider__img">
-                                    <div className="space-slider__control space-slider__control--prev">
-                                        →
-                                    </div>
-                                    <div className="space-slider__wrap">
-                                        <h3 className="space-slider__title">Выставочная зона</h3>
-                                        <img src="./img/digital-space/slide-1.png" alt="Выстовочная зона"/>
-                                    </div>
-                                    <div className="space-slider__control space-slider__control--next">
-                                        →
-                                    </div>
-                                </div>
-                                <div className="space-slider__main">
-                                    <div className="space-slider__content">
-                                        <h3 className="space-slider__title">Выставочная зона</h3>
-                                        <div className="space-slider__text">
-                                            <p>
-                                            Реалистичная экспо зона , в которой вы можете провести полноценную выставку или конференцию. 
-                                            Десятки интерактивных стендов с возможностью размещения информации о продуктах компаний-участниц и огромная сцена для выступления или презентации.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <a href="#" className="btn-link">
-                                        <span className="btn-link__text">Перейти к локациям</span>
-                                        <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
-                                            alt="Перейти"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
 
-                    <SwiperSlide>
-                        <div className="swiper-slide">
-                                <div className="space-slider__slide">
-                                    <div className="space-slider__img">
-                                        <div className="space-slider__control space-slider__control--prev">
-                                            →
+        <div className="back-wrap">
+                <section className="spaces" id="spaces">
+                    <div className="spaces__path">
+                        <svg width="1920" height="311" viewBox="0 0 1920 311" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1419.95 126.107C1384.48 126.107 1355.62 154.894 1355.62 190.273C1355.62 224.329 1412.28 302.266 1414.77 305.635H1418.77C1419.04 306.005 1420.66 305.635 1421.12 305.635C1421.58 305.635 1423.32 304.678 1423.6 304.308L1424.77 305.939C1427.25 302.569 1484.29 224.329 1484.29 190.273C1484.29 154.894 1455.43 126.107 1419.95 126.107ZM1419.95 167.289C1432.66 167.289 1443 177.598 1443 190.273C1443 202.943 1432.66 213.258 1419.95 213.258C1407.25 213.258 1396.91 202.943 1396.91 190.273C1396.91 177.598 1407.25 167.289 1419.95 167.289Z" fill="#F9F9F9"/>
+                            <path d="M1399.27 304.5H1440.61" stroke="#8CB0FA" stroke-width="3" stroke-linecap="round"/>
+                            <ellipse cx="1419.77" cy="190.438" rx="23.5" ry="23.4383" fill="#DCF36E"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V272.56C0 217.331 44.7715 172.56 100 172.56H1165.82C1212.63 172.56 1257.82 155.36 1292.78 124.23C1363.33 61.4202 1469.2 59.6344 1541.83 120.03L1548.95 125.946C1585.17 156.068 1630.79 172.56 1677.9 172.56H1845.5C1886.65 172.56 1920 205.915 1920 247.06V0H0Z" fill="#FDFDFD"/>
+                        </svg>
+                    </div>
+                    <div className="spaces__container container">
+                        <div className="spaces__text-content">
+                            <h2 className="spaces__title">Цифровые пространства ЮНИОНКОНФ</h2>
+                            <div className="spaces__text">
+                                <p>
+                                    Виртуальные локации для приватных встреч, переговоров и презентаций
+                                </p>
+                            </div>
+                        </div>
+                            <Swiper
+                            loop={true}  
+                            navigation={{
+                                nextEl: '.space-slider__control--next',
+                                prevEl: '.space-slider__control--prev'
+                            }} 
+                            modules={[Navigation]}
+                            className="space-slider swiper"
+                            >
+                            <div className="space-slider__controls">
+                                <div className="space-slider__controls-inner">
+                                    <div className="space-slider__control space-slider__control--mobile space-slider__control--prev">
+                                        <img src="./icon/slider-control.svg" alt="" />
+                                    </div>
+                                    <div className="space-slider__control space-slider__control--mobile space-slider__control--next">
+                                        <img src="./icon/slider-control.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <SwiperSlide>
+                                <div className="swiper-slide">
+                                    <div className="space-slider__slide">
+                                        <div className="space-slider__img">
+                                            <div className="space-slider__control space-slider__control--prev">
+                                                <img src="./icon/slider-control.svg" alt="Назад" />
+                                            </div>
+                                            <div className="space-slider__wrap">
+                                                <h3 className="space-slider__title">Выставочная зона</h3>
+                                                <img src="./img/digital-space/zone.png" alt=" Изображение локации Выставочная зона"/>
+                                            </div>
+                                            <div className="space-slider__control space-slider__control--next">
+                                                <img src="./icon/slider-control.svg" alt="Вперед" />
+                                            </div>
                                         </div>
-                                        <div className="space-slider__wrap">
-                                            <h3 className="space-slider__title">Конференц - зал</h3>
-                                            <img src="./img/digital-space/slide-2.png" alt="Конференц-зал"/>
-                                        </div>
-                                        <div className="space-slider__control space-slider__control--next">
-                                            →
+                                        <div className="space-slider__main">
+                                            <div className="space-slider__content">
+                                                <h3 className="space-slider__title">Выставочная зона</h3>
+                                                <div className="space-slider__text">
+                                                    <p>
+                                                    Реалистичная экспо зона , в которой вы можете провести полноценную выставку или конференцию. 
+                                                    Десятки интерактивных стендов с возможностью размещения информации о продуктах компаний-участниц и огромная сцена для выступления или презентации.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="#" className="btn-link">
+                                                <span className="btn-link__text">Перейти к локациям</span>
+                                                <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
+                                                    alt="Перейти"/>
+                                            </a>
                                         </div>
                                     </div>
-                                    <div className="space-slider__main">
-                                        <div className="space-slider__content">
-                                            <h3 className="space-slider__title">Конференц - зал</h3>
-                                            <div className="space-slider__text">
-                                                <p>
-                                                            Строгий современный дизайн создает деловую рабочую атмосферу для проведения мероприятий разного формата.
-                                                            Идеально подойдет для презентации, конференции и любого другого бизнес мероприятия.
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className="swiper-slide">
+                                    <div className="space-slider__slide">
+                                        <div className="space-slider__img">
+                                            <div className="space-slider__control space-slider__control--prev">
+                                                <img src="./icon/slider-control.svg" alt="Назад" />
+                                            </div>
+                                            <div className="space-slider__wrap">
+                                                <h3 className="space-slider__title">Конференц - зал</h3>
+                                                <img src="./img/digital-space/conf.png" alt="Изображение локации Конференц-зал"/>
+                                            </div>
+                                            <div className="space-slider__control space-slider__control--next">
+                                                <img src="./icon/slider-control.svg" alt="Вперед" />
+                                            </div>
+                                        </div>
+                                        <div className="space-slider__main">
+                                            <div className="space-slider__content">
+                                                <h3 className="space-slider__title">Конференц - зал</h3>
+                                                <div className="space-slider__text">
+                                                    <p>
+                                                        Строгий современный дизайн создает деловую рабочую атмосферу для проведения мероприятий разного формата.
+                                                        Идеально подойдет для презентации, конференции и любого другого бизнес мероприятия.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="#" className="btn-link">
+                                                <span className="btn-link__text">Перейти к локациям</span>
+                                                <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
+                                                    alt="Перейти"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className="swiper-slide">
+                                    <div className="space-slider__slide">
+                                        <div className="space-slider__img">
+                                            <div className="space-slider__control space-slider__control--prev">
+                                                <img src="./icon/slider-control.svg" alt="Назад" />
+                                            </div>
+                                            <div className="space-slider__wrap">
+                                                <h3 className="space-slider__title">РосПрод</h3>
+                                                <img src="./img/digital-space/factory.png" alt="Изображение локации РосПрод"/>
+                                            </div>
+                                            <div className="space-slider__control space-slider__control--next">
+                                                <img src="./icon/slider-control.svg" alt="Вперед" />
+                                            </div>
+                                        </div>
+                                        <div className="space-slider__main">
+                                            <div className="space-slider__content">
+                                                <h3 className="space-slider__title">РосПрод</h3>
+                                                <div className="space-slider__text">
+                                                    <p>
+                                                        Реалистичный дизайн локации подойдет для наиболее точного воспроизведения каждого этапа промышленных процессов. Вы сможете подробно продемонстрировать партнерам, акционерам и потенциальным инвесторам каждый этап производства изнутри и с максимальной точностью.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="#" className="btn-link">
+                                                <span className="btn-link__text">Перейти к локациям</span>
+                                                <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
+                                                    alt="Перейти"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className="swiper-slide">
+                                    <div className="space-slider__slide">
+                                        <div className="space-slider__img">
+                                            <div className="space-slider__control space-slider__control--prev">
+                                                <img src="./icon/slider-control.svg" alt="Назад" />
+                                            </div>
+                                            <div className="space-slider__wrap">
+                                                <h3 className="space-slider__title">Рос Агро Экспо</h3>
+                                                <img src="./img/digital-space/agro.png" alt="Изображении локации Рос Агро Экспо"/>
+                                            </div>
+                                            <div className="space-slider__control space-slider__control--next">
+                                                <img src="./icon/slider-control.svg" alt="Вперед" />
+                                            </div>
+                                        </div>
+                                        <div className="space-slider__main">
+                                            <div className="space-slider__content">
+                                                <h3 className="space-slider__title">Рос Агро Экспо</h3>
+                                                <div className="space-slider__text">
+                                                    <p>
+                                                        Выставочная локация, в которой любая торговая или промышленная компания сможет продемонстрировать свою технику и новые разработки в масштабе 1:1 
+                                                        в наиболее выгодном свете благодаря уникальным возможностям ЮНИОНКОНФ.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="#" className="btn-link">
+                                                <span className="btn-link__text">Перейти к локациям</span>
+                                                <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
+                                                    alt="Перейти"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className="swiper-slide">
+                                    <div className="space-slider__slide">
+                                        <div className="space-slider__img">
+                                            <div className="space-slider__control space-slider__control--prev">
+                                                <img src="./icon/slider-control.svg" alt="Назад" />
+                                            </div>
+                                            <div className="space-slider__wrap">
+                                                <h3 className="space-slider__title">Арабская ночь</h3>
+                                                <img src="./img/digital-space/night.png" alt="Изображение локации Арабская ночь"/>
+                                            </div>
+                                            <div className="space-slider__control space-slider__control--next">
+                                                <img src="./icon/slider-control.svg" alt="Вперед" />
+                                            </div>
+                                        </div>
+                                        <div className="space-slider__main">
+                                            <div className="space-slider__content">
+                                                <h3 className="space-slider__title">Арабская ночь</h3>
+                                                <div className="space-slider__text">
+                                                    <p>
+                                                        Восточная атмосфера данной локации располагает к спокойному 
+                                                        и непринуждённому разговору, подойдёт для приватного общения 
+                                                        с коллегами или партнёрами 
+                                                        в неформальной обстановке
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="#" className="btn-link">
+                                                <span className="btn-link__text">Перейти к локациям</span>
+                                                <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
+                                                    alt="Перейти"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+
+                            <SwiperSlide>
+                                <div className="swiper-slide">
+                                    <div className="space-slider__slide">
+                                        <div className="space-slider__img">
+                                            <div className="space-slider__control space-slider__control--prev">
+                                                <img src="./icon/slider-control.svg" alt="Назад" />
+                                            </div>
+                                            <div className="space-slider__wrap">
+                                                <h3 className="space-slider__title">Японский лаундж</h3>
+                                                <img src="./img/digital-space/japan.png" alt="Изображение локации Японский лаундж"/>
+                                            </div>
+                                            <div className="space-slider__control space-slider__control--next">
+                                                <img src="./icon/slider-control.svg" alt="Вперед" />
+                                            </div>
+                                        </div>
+                                        <div className="space-slider__main">
+                                            <div className="space-slider__content">
+                                                <h3 className="space-slider__title">Японский лаундж</h3>
+                                                <div className="space-slider__text">
+                                                    <p>
+                                                        Локация в спокойном японском стиле, которая подойдет для проведения совещаний, переговоров или организации встреч с командой.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <a href="#" className="btn-link">
+                                                <span className="btn-link__text">Перейти к локациям</span>
+                                                <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
+                                                    alt="Перейти"/>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </SwiperSlide>
+                            
+                          
+                        </Swiper>
+                    </div>
+                </section>
+
+                <section class="scale" id="scale">
+                    <div class="container">
+                        <div class="scale__title-wrap">
+                            <h2 class="scale__title">Масштаб для бизнеса</h2>
+                            <div class="scale__title-decor"></div>
+                            <div class="scale__title-tag">Возможности платформы</div>
+                        </div>
+                        <h3 class="scale__subtitle">Аудитория со всего мира, мгновенная коммуникация, низкая себестоимость и
+                            высокая прибыль
+                        </h3>
+                        <div className="scale__card-row">
+                                <div className="scale-card-wrapper">
+                                    <div className="scale-card">
+                                        <div className="scale-card__inner">
+                                            <div className="scale-card__content">
+                                                <img className="scale-card__icon" src="./img/scale/app.png" alt="app" />
+                                                <p className="scale-card__text">
+                                                    Удобное взаимодействие между онлайн и офлайн участниками через мобильное приложение
                                                 </p>
                                             </div>
                                         </div>
-                                        <a href="#" className="btn-link">
-                                            <span className="btn-link__text">Перейти к локациям</span>
-                                            <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
-                                                alt="Перейти" />
-                                        </a>
                                     </div>
                                 </div>
-                        </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <div className="swiper-slide">
-                            <div className="space-slider__slide">
-                                <div className="space-slider__img">
-                                    <div className="space-slider__control space-slider__control--prev">
-                                        →
-                                    </div>
-                                    <div className="space-slider__wrap">
-                                        <h3 className="space-slider__title">РосПрод</h3>
-                                        <img src="./img/digital-space/slide-7.png" alt="РосПрод"/>
-                                    </div>
-                                    <div className="space-slider__control space-slider__control--next">
-                                        →
-                                    </div>
-                                </div>
-                                <div className="space-slider__main">
-                                    <div className="space-slider__content">
-                                        <h3 className="space-slider__title">РосПрод</h3>
-                                        <div className="space-slider__text">
-                                            <p>
-                                                Реалистичный дизайн локации подойдет для наиболее точного воспроизведения каждого этапа промышленных процессов. Вы сможете подробно продемонстрировать партнерам, акционерам и потенциальным инвесторам каждый этап производства изнутри и с максимальной точностью.
-                                            </p>
+                                <div className="scale-card-wrapper">
+                                <div className="scale-card">
+                                        <div className="scale-card__inner scale-card__inner--gray">
+                                            <div className="scale-card__content">
+                                                <img className="scale-card__icon" src="./img/scale/srm.png" alt="app" />
+                                                <p className="scale-card__text">
+                                                    Удобная CRM система 
+                                                    для аналитики метрик конференции
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <a href="#" className="btn-link">
-                                        <span className="btn-link__text">Перейти к локациям</span>
-                                        <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
-                                            alt="Перейти"/>
-                                    </a>
                                 </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <div className="swiper-slide">
-                            <div className="space-slider__slide">
-                                <div className="space-slider__img">
-                                    <div className="space-slider__control space-slider__control--prev">
-                                        →
-                                    </div>
-                                    <div className="space-slider__wrap">
-                                        <h3 className="space-slider__title">Рос Агро Экспо</h3>
-                                        <img src="./img/digital-space/slide-6.png" alt="Рос Агро Экспо"/>
-                                    </div>
-                                    <div className="space-slider__control space-slider__control--next">
-                                        →
-                                    </div>
-                                </div>
-                                <div className="space-slider__main">
-                                    <div className="space-slider__content">
-                                        <h3 className="space-slider__title">Рос Агро Экспо</h3>
-                                        <div className="space-slider__text">
-                                            <p>
-                                                Выставочная локация, в которой любая торговая или промышленная компания сможет продемонстрировать свою технику и новые разработки в масштабе 1:1 
-                                                в наиболее выгодном свете благодаря уникальным возможностям ЮНИОНКОНФ.
-                                            </p>
+                                <div className="scale-card-wrapper">
+                                    <div className="scale-card">
+                                        <div className="scale-card__inner">
+                                            <div className="scale-card__content">
+                                            <img className="scale-card__icon" src="./img/scale/interface.png" alt="app" />
+                                                <p className="scale-card__text">
+                                                    Простой интерфейс управления выступлением
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <a href="#" className="btn-link">
-                                        <span className="btn-link__text">Перейти к локациям</span>
-                                        <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
-                                            alt="Перейти"/>
-                                    </a>
                                 </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <div className="swiper-slide">
-                            <div className="space-slider__slide">
-                                <div className="space-slider__img">
-                                    <div className="space-slider__control space-slider__control--prev">
-                                        →
-                                    </div>
-                                    <div className="space-slider__wrap">
-                                        <h3 className="space-slider__title">Космический корабль</h3>
-                                        <img src="./img/digital-space/slide-5.png" alt="Космический корабль"/>
-                                    </div>
-                                    <div className="space-slider__control space-slider__control--next">
-                                        →
-                                    </div>
-                                </div>
-                                <div className="space-slider__main">
-                                    <div className="space-slider__content">
-                                        <h3 className="space-slider__title">Космический корабль</h3>
-                                        <div className="space-slider__text">
-                                            <p>
-                                                Космический корабль 
-                                                в футуристичном стиле, на котором можно провести презентацию продукта, организовать переговоры с партнёрами по бизнесу 
-                                                и поучаствовать в увлекательных игровых интерактивах с коллегами.
-                                            </p>
+                                <div className="scale-card-wrapper">
+                                <div className="scale-card">
+                                        <div className="scale-card__inner scale-card__inner--gray">
+                                            <div className="scale-card__content">
+                                            <img className="scale-card__icon" src="./img/scale/search.png" alt="app" />
+                                                <p className="scale-card__text">
+                                                Доступная база данных со всеми участниками конференции
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <a href="#" className="btn-link">
-                                        <span className="btn-link__text">Перейти к локациям</span>
-                                        <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
-                                            alt="Перейти"/>
-                                    </a>
                                 </div>
                             </div>
-                        </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <div className="swiper-slide">
-                            <div className="space-slider__slide">
-                                <div className="space-slider__img">
-                                    <div className="space-slider__control space-slider__control--prev">
-                                        →
-                                    </div>
-                                    <div className="space-slider__wrap">
-                                        <h3 className="space-slider__title">Арабская ночь</h3>
-                                        <img src="./img/digital-space/slide-4.png" alt="Арабская ночь"/>
-                                    </div>
-                                    <div className="space-slider__control space-slider__control--next">
-                                        →
-                                    </div>
-                                </div>
-                                <div className="space-slider__main">
-                                    <div className="space-slider__content">
-                                        <h3 className="space-slider__title">Арабская ночь</h3>
-                                        <div className="space-slider__text">
-                                            <p>
-                                                Восточная атмосфера данной локации располагает к спокойному 
-                                                и непринуждённому разговору, подойдёт для приватного общения 
-                                                с коллегами или партнёрами 
-                                                в неформальной обстановке
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <a href="#" className="btn-link">
-                                        <span className="btn-link__text">Перейти к локациям</span>
-                                        <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
-                                            alt="Перейти"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-
-                    <SwiperSlide>
-                        <div className="swiper-slide">
-                            <div className="space-slider__slide">
-                                <div className="space-slider__img">
-                                    <div className="space-slider__control space-slider__control--prev">
-                                        →
-                                    </div>
-                                    <div className="space-slider__wrap">
-                                        <h3 className="space-slider__title">Японский лаундж</h3>
-                                        <img src="./img/digital-space/slide-3.png" alt="Японский лаундж"/>
-                                    </div>
-                                    <div className="space-slider__control space-slider__control--next">
-                                        →
-                                    </div>
-                                </div>
-                                <div className="space-slider__main">
-                                    <div className="space-slider__content">
-                                        <h3 className="space-slider__title">Японский лаундж</h3>
-                                        <div className="space-slider__text">
-                                            <p>
-                                                Локация в спокойном японском стиле, которая подойдет для проведения совещаний, переговоров или организации встреч
-                                                с командой.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <a href="#" className="btn-link">
-                                        <span className="btn-link__text">Перейти к локациям</span>
-                                        <img className="btn-link__icon" src="./icon/arrow-btn-link.svg"
-                                            alt="Перейти"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                </Swiper>
-            </div>
-        </section>
-
-        <section class="scale" id="scale">
-            <div class="container">
-                <div class="scale__title-wrap">
-                    <h2 class="scale__title">Масштаб для бизнеса</h2>
-                    <div class="scale__title-decor"></div>
-                    <div class="scale__title-tag">Возможности платформы</div>
-                </div>
-                <h3 class="scale__subtitle">Аудитория со всего мира, мгновенная коммуникация, низкая себестоимость и
-                    высокая прибыль
-                </h3>
-                <div className="scale__card-row">
-                        <div className="scale-card-wrapper">
-                            <div className="scale-card">
-                                <div className="scale-card__inner">
-                                    <div className="scale-card__content">
-                                        <img className="scale-card__icon" src="./img/scale/app.png" alt="app" />
-                                        <p className="scale-card__text">
-                                            Удобное взаимодействие между онлайн и офлайн участниками через мобильное приложение
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="scale-card-wrapper">
-                        <div className="scale-card">
-                                <div className="scale-card__inner scale-card__inner--gray">
-                                    <div className="scale-card__content">
-                                        <img className="scale-card__icon" src="./img/scale/srm.png" alt="app" />
-                                        <p className="scale-card__text">
-                                            Удобная CRM система 
-                                            для аналитики метрик конференции
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="scale-card-wrapper">
-                            <div className="scale-card">
-                                <div className="scale-card__inner">
-                                    <div className="scale-card__content">
-                                    <img className="scale-card__icon" src="./img/scale/interface.png" alt="app" />
-                                        <p className="scale-card__text">
-                                            Простой интерфейс управления выступлением
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="scale-card-wrapper">
-                        <div className="scale-card">
-                                <div className="scale-card__inner scale-card__inner--gray">
-                                    <div className="scale-card__content">
-                                    <img className="scale-card__icon" src="./img/scale/search.png" alt="app" />
-                                        <p className="scale-card__text">
-                                        Доступная база данных со всеми участниками конференции
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
-                
-            </div>
-        </section>
+                </section>
+        </div>
+        
 
         <section className="contact">
             <div className="contact__wrap">
@@ -662,30 +631,95 @@ export default function Home() {
                 </div>
             </div>
             <div className="footer__uc">
-                <div className="container">
-                    <a className="footer__uc-link-btn">
-                        ЮНИОНКОНФ
-                        <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
-                    </a>
-                    <div className="footer__uc-wrap">
-                        <div className="footer__uc-item">
-                            <a href="https://t.me/unionconf" className="footer__uc-link">ЮНИОНКОНФ</a>
-                            <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
-                        </div>
-                        <div className="footer__uc-item">
-                            <a href="https://t.me/unionconf" className="footer__uc-link">ЮНИОНКОНФ</a>
-                            <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
-                        </div>
-                        <div className="footer__uc-item">
-                            <a href="https://t.me/unionconf" className="footer__uc-link">ЮНИОНКОНФ</a>
-                            <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
-                        </div>
-                        <div className="footer__uc-item">
-                            <a href="https://t.me/unionconf" className="footer__uc-link">ЮНИОНКОНФ</a>
-                            <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
-                        </div>
+                    <div className="container">
+                        <a className="footer__uc-link-btn">
+                                ЮНИОНКОНФ
+                                <img src="./icon/arrow-link-top-black.svg" alt="Перейти" />
+                        </a>
                     </div>
-                </div>
+                    <div className="footer__uc-wrap ticker-title">
+                        <a className="footer__uc-inner ticker-title__inner" href="">
+                            <span className="footer__uc-item ticker-title__item">
+                                <span className="footer__uc-name">ЮНИОНКОНФ</span>
+                                <img src="./icon/arrow-link-top-black.svg" className="footer__uc-icon" />
+                            </span>
+
+                            <span className="footer__uc-item ticker-title__item">
+                                <span className="footer__uc-name">ЮНИОНКОНФ</span>
+                                <img src="./icon/arrow-link-top-black.svg" className="footer__uc-icon" />
+                            </span>
+
+                            <span className="footer__uc-item ticker-title__item">
+                                <span className="footer__uc-name">ЮНИОНКОНФ</span>
+                                <img src="./icon/arrow-link-top-black.svg" className="footer__uc-icon" />
+                            </span>
+
+                            <span className="footer__uc-item ticker-title__item">
+                                <span className="footer__uc-name">ЮНИОНКОНФ</span>
+                                <img src="./icon/arrow-link-top-black.svg" className="footer__uc-icon" />
+                            </span>
+
+                            <span className="footer__uc-item ticker-title__item">
+                                <span className="footer__uc-name">ЮНИОНКОНФ</span>
+                                <img src="./icon/arrow-link-top-black.svg" className="footer__uc-icon" />
+                            </span>
+
+                            <span className="footer__uc-item ticker-title__item">
+                                <span className="footer__uc-name">ЮНИОНКОНФ</span>
+                                <img src="./icon/arrow-link-top-black.svg" className="footer__uc-icon" />
+                            </span>
+
+                            <span className="footer__uc-item ticker-title__item">
+                                <span className="footer__uc-name">ЮНИОНКОНФ</span>
+                                <img src="./icon/arrow-link-top-black.svg" className="footer__uc-icon" />
+                            </span>
+
+                            <span className="footer__uc-item ticker-title__item">
+                                <span className="footer__uc-name">ЮНИОНКОНФ</span>
+                                <img src="./icon/arrow-link-top-black.svg" className="footer__uc-icon" />
+                            </span>
+
+                            <span className="footer__uc-item ticker-title__item">
+                                <span className="footer__uc-name">ЮНИОНКОНФ</span>
+                                <img src="./icon/arrow-link-top-black.svg" className="footer__uc-icon" />
+                            </span>
+
+                            <span className="footer__uc-item ticker-title__item">
+                                <span className="footer__uc-name">ЮНИОНКОНФ</span>
+                                <img src="./icon/arrow-link-top-black.svg" className="footer__uc-icon" />
+                            </span>
+
+                            <span className="footer__uc-item ticker-title__item">
+                                <span className="footer__uc-name">ЮНИОНКОНФ</span>
+                                <img src="./icon/arrow-link-top-black.svg" className="footer__uc-icon" />
+                            </span>
+
+                            <span className="footer__uc-item ticker-title__item">
+                                <span className="footer__uc-name">ЮНИОНКОНФ</span>
+                                <img src="./icon/arrow-link-top-black.svg" className="footer__uc-icon" />
+                            </span>
+
+                            <span className="footer__uc-item ticker-title__item">
+                                <span className="footer__uc-name">ЮНИОНКОНФ</span>
+                                <img src="./icon/arrow-link-top-black.svg" className="footer__uc-icon" />
+                            </span>
+
+                            <span className="footer__uc-item ticker-title__item">
+                                <span className="footer__uc-name">ЮНИОНКОНФ</span>
+                                <img src="./icon/arrow-link-top-black.svg" className="footer__uc-icon" />
+                            </span>
+
+                            <span className="footer__uc-item ticker-title__item">
+                                <span className="footer__uc-name">ЮНИОНКОНФ</span>
+                                <img src="./icon/arrow-link-top-black.svg" className="footer__uc-icon" />
+                            </span>
+
+                            <span className="footer__uc-item ticker-title__item">
+                                <span className="footer__uc-name">ЮНИОНКОНФ</span>
+                                <img src="./icon/arrow-link-top-black.svg" className="footer__uc-icon" />
+                            </span>
+                        </a>
+                    </div>
             </div>
 
             <div className="footer__contacts">
@@ -699,8 +733,8 @@ export default function Home() {
                         </div>
                         <div className="copyright">
                             <img src="./img/logo-abb.svg" alt="UC Лого" />
-                            <span>ООО "ЮНИОНКОНФ" ИНН 9731120123</span>
-                            <span>ЮНИОНКОНФ, 2023. Все права защищены.</span>
+                            <span>ООО "ЮНИОНКОНФ" ИНН &zwj;9731120123</span>
+                            <span> ЮНИОНКОНФ, 2023. Все права защищены.</span>
                         </div>
                         <div className="footer__links--h">
                             <div className="footer__links-title">Контакты:</div>
