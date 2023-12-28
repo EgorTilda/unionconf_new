@@ -219,9 +219,9 @@
 
 .network__bg-decor {
     width: 100%;
-    background-color: red;
+    min-height: 100px;
     margin: 160px auto;
-    max-width: 1800px;
+    max-width: 2000px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,7 +249,7 @@
     }
 
     img {
-        max-width: 105%;
+        max-width: 100%;
         @media screen and (max-width: 576px) {
             max-width: 200%;
         }
