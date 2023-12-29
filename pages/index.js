@@ -12,6 +12,7 @@ import 'swiper/css/scrollbar';
 
 // Import Swiper styles
 import 'swiper/css';
+import ContactForm from '@/components/ContactForm';
 
 export default function Home() {
   const ref = useRef(null);
@@ -596,16 +597,7 @@ export default function Home() {
                 <div className="contact__container container">
                     <div className="contact__content">
                         <h2 className="contact__title">обратная <br />связь</h2>
-                        <form className="contact-form" action="#" method="POST" name="form-contact">
-                            <fieldset className="contact-form__fields">
-                                <legend className="contact-form__title">Оставьте контактные данные:</legend>
-                                <input type="email" className="contact-form__field form-field"
-                                    placeholder="Почта: example@mail.com" />
-                                <input type="tel" className="contact-form__field form-field"
-                                    placeholder="Телефон: +7(916)111-11-11" />
-                                <button type="submit" className="contact-form__btn">Отправить</button>
-                            </fieldset>
-                        </form>
+                        <ContactForm />
                     </div>
                     <div className="contact__img">
                         <img src="./img/contact-form/cover.png" alt="Unionconf" />
