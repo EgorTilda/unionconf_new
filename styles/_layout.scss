@@ -264,6 +264,7 @@
     max-width: 85%;
     @media screen and (max-width: 576px) {
         max-width: 90%;
+        margin-right: 8%;
     }
 }
 
@@ -329,10 +330,13 @@
 }
 
 .benefits__cta-content {
-    margin-left: 3.75rem;
+    // margin-left: 3.75rem;
     max-width: 24rem;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 576px) {
         max-width: 80%;
+    }
+    @media screen and (max-width: 616px) {
+        margin-left: 2%;
     }
 }
 
@@ -343,7 +347,7 @@
     text-transform: uppercase;
     margin-bottom: 2.45rem;
     white-space: nowrap;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 426px) {
         font-size: 20px;
     }
 }
@@ -360,7 +364,7 @@
     line-height: 120%;
     max-width: 100%;
     font-weight: 500;
-    @media screen and (max-width: 425px) {
+    @media screen and (min-width: 320px) and (max-width: 768px) {
         font-size: 16px;
     }
 }
@@ -385,9 +389,14 @@
     font-weight: 800;
     text-transform: uppercase;
     margin-bottom: 3rem;
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 426px) {
         font-size: 20px;
         align-self: flex-start;
+    }
+    @media screen and (max-width: 616px) {
+        font-size: 20px;
+        align-self: flex-start;
+        margin-left: 2%;
     }
 }
 
@@ -690,6 +699,9 @@
     padding-top: 1rem;
     img {
         max-width: 100%;
+    }
+    @media screen and (max-width: 768px) {
+        padding-left: 0;
     }
 }
 

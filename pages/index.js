@@ -181,14 +181,16 @@ export default function Home() {
             <div className="logo-abb">
                 <img src="./img/logo-abb.svg" alt="UC Logo"/>
             </div>
-            <div className="benefits__cta-content">
-                <h2 className="benefits__cta-title">Все, что нужно <br/> <span className="benefits__cta-decor">для
-                        вовлечения</span></h2>
-                <div className="benefits__cta-text">
-                    <p>
-                        Каждый пользователь мероприятия <br/> проживает уникальный опыт, спродюсированный под задачи
-                        организатора и цели участников
-                    </p>
+            <div className="container ">
+                <div className="benefits__cta-content">
+                    <h2 className="benefits__cta-title">Все, что нужно <br/> <span className="benefits__cta-decor">для
+                            вовлечения</span></h2>
+                    <div className="benefits__cta-text">
+                        <p>
+                            Каждый пользователь мероприятия <br/> проживает уникальный опыт, спродюсированный под задачи
+                            организатора и цели участников
+                        </p>
+                    </div>
                 </div>
             </div>
             <div className="container">

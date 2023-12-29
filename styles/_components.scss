@@ -51,7 +51,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    @media screen and (min-width: 370px) and (max-width: 555px) {
+        .logo {
+            margin-left: 12px;
+        }
+        .menu-btn {
+            margin-right: 12px;
+        }
+    }
     @media screen and (min-width: 992px) and (max-width: 1280px) {
         .logo {
             margin-left: 40px;
