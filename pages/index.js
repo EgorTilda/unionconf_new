@@ -172,7 +172,7 @@ export default function Home() {
             </div>
         </section>
 
-        <section className="benefits" id="benefits">
+        <section className="benefits">
             <div className="benefits__path">
                 <svg width="1921" height="213" viewBox="0 0 1921 213" fill="#F9F9F9" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M1920.39 0.805664H0.390625V212.279H647.035C702.85 212.279 757.574 196.835 805.152 167.657L816.273 160.836C909.531 103.646 1027.45 105.565 1118.8 165.76C1164.85 196.105 1218.78 212.279 1273.93 212.279H1920.39V0.805664Z" fill="#F9F9F9"/>
@@ -181,7 +181,7 @@ export default function Home() {
             <div className="logo-abb">
                 <img src="./img/logo-abb.svg" alt="UC Logo"/>
             </div>
-            <div className="container ">
+            <div className="container">
                 <div className="benefits__cta-content">
                     <h2 className="benefits__cta-title">Все, что нужно <br/> <span className="benefits__cta-decor">для
                             вовлечения</span></h2>
@@ -194,7 +194,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="container">
-                <div className="benefits__main-content">
+                <div className="benefits__main-content" id="benefits">
                     <h2 className="benefits__title">Вас точно запомнят</h2>
                     <div className="benefits__col">
                         <div className="benefits-card">
@@ -271,7 +271,7 @@ export default function Home() {
 
 
         <div className="back-wrap">
-                <section className="spaces" id="spaces">
+                <section className="spaces" >
                     <div className="spaces__path">
                         <svg width="1920" height="311" viewBox="0 0 1920 311" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1419.95 126.107C1384.48 126.107 1355.62 154.894 1355.62 190.273C1355.62 224.329 1412.28 302.266 1414.77 305.635H1418.77C1419.04 306.005 1420.66 305.635 1421.12 305.635C1421.58 305.635 1423.32 304.678 1423.6 304.308L1424.77 305.939C1427.25 302.569 1484.29 224.329 1484.29 190.273C1484.29 154.894 1455.43 126.107 1419.95 126.107ZM1419.95 167.289C1432.66 167.289 1443 177.598 1443 190.273C1443 202.943 1432.66 213.258 1419.95 213.258C1407.25 213.258 1396.91 202.943 1396.91 190.273C1396.91 177.598 1407.25 167.289 1419.95 167.289Z" fill="#F9F9F9"/>
@@ -289,7 +289,7 @@ export default function Home() {
                                 </p>
                             </div>
                         </div>
-                            <Swiper
+                            <Swiper id="spaces"
                             loop={true}  
                             navigation={{
                                 nextEl: '.space-slider__control--next',
