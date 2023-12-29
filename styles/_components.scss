@@ -488,6 +488,8 @@
     width: 100%;
     min-height: 14rem;
     overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
 
     &:nth-child(odd) {
         background-color: $accent;
@@ -499,6 +501,8 @@
         min-height: 14rem;
         border-radius: 3.75rem;
         overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: hidden;
     }
     &__num {
         position: absolute;
@@ -506,13 +510,13 @@
         font-family: "Nebulas";
         font-size: 13.7rem;
         font-weight: 800;
-        border-radius: 3.75rem;
-        overflow: hidden;
         background: linear-gradient(267deg, #888cc0 -7.29%, rgba(136, 140, 192, 0.51) 100%);
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        transform: translate3d(-10%, 14%, 0);
+        // transform: translate3d(-10%, 14%, 0);
+       bottom: -35%;
+       left: -2%;
     }
     &__content {
         padding: 3rem;
@@ -552,7 +556,8 @@
         }
         &__num {
             font-size: 86px;
-            transform: translate3d(-10%, 80%, 0);
+            bottom: -12%;
+            left: -1%;
         }
     }
     @media screen and (max-width: 576px) {
@@ -571,7 +576,8 @@
             max-width: 60%;
         }
         &__num {
-            transform: translate3d(-10%, 90%, 0);
+            bottom: -16%;
+            left: -0.5%;
         }
     }
 }
