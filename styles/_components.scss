@@ -495,6 +495,10 @@
 
     &__inner {
         position: relative;
+        width: 100%;
+        min-height: 14rem;
+        border-radius: 3.75rem;
+        overflow: hidden;
     }
     &__num {
         position: absolute;
@@ -502,6 +506,8 @@
         font-family: "Nebulas";
         font-size: 13.7rem;
         font-weight: 800;
+        border-radius: 3.75rem;
+        overflow: hidden;
         background: linear-gradient(267deg, #888cc0 -7.29%, rgba(136, 140, 192, 0.51) 100%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -531,6 +537,9 @@
     }
     @media screen and (max-width: 620px) {
         min-height: 220px;
+        &__inner {
+            min-height: 220px;
+        }
         &__content {
             flex-direction: column;
             padding: 20px 12px;
@@ -548,6 +557,9 @@
     }
     @media screen and (max-width: 576px) {
         min-height: 170px;
+        &__inner {
+            min-height: 170px;
+        }
         &__content {
             flex-direction: column;
             padding: 20px 12px;
