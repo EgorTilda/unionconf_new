@@ -248,7 +248,7 @@
         flex: 1 0 45%;
         margin-right: 12px;
     }
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 450px) {
         flex: 0 0 220px;
         min-width: 220px;
     }
@@ -280,7 +280,7 @@
     @media screen and (max-width: 440px) {
         min-height: 25rem;
     }
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 450px) {
         min-height: 28rem;
     }
     &__back-content {
@@ -391,7 +391,7 @@
         order: 3;
     }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 450px) {
     .about-card__item--3 {
         order: 3;
     }
