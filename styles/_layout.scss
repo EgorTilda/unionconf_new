@@ -476,9 +476,11 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 2rem;
-    margin-left: 60px;
     @media screen and (min-width: 768px) and (max-width: 1440px) {
         margin-left: 40px;
+    }
+    @media screen and (min-width: 1441px) {
+        margin-left: 60px;
     }
     @media screen and (max-width: 768px) {
         text-align: left;
@@ -747,7 +749,7 @@
         filter: blur(280px);
 
         @media screen and (max-width: 1000px) {
-            filter: blur(140px);
+            filter: blur(120px);
         }
     }
 }
