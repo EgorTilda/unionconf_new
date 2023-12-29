@@ -766,6 +766,7 @@
     padding-top: -1px;
     padding-bottom: 28px;
     cursor: pointer;
+  
     &__inner {
         flex: 1 0 auto;
         height: 100%;
@@ -791,8 +792,8 @@
             transform: translate(-50%, -70%);
             z-index: 2;
             box-shadow: 0px 4px 7px 0px rgba(0, 0, 0, 0.1) inset;
-            @media screen and (max-width: 1030px) {
-                height: 45px;
+            @media screen and (max-width: 1160px) {
+                height: 40px;
                 border-radius: 20px;
             }
         }
@@ -807,9 +808,13 @@
         justify-content: space-between;
         padding: 5rem 3rem;
         min-height: 80%;
-        @media screen and (max-width: 862px) {
-            padding: 30px 16px;
+        @media screen and (max-width: 1460px) {
+            padding: 30px 12px;
+            justify-content: center;
         }
+    }
+    &--pt &__content {
+        padding-top: 2.2rem;
     }
     &__icon {
         max-width: 80%;
